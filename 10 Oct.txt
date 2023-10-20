@@ -1,0 +1,244 @@
+Q1 
+
+import java.util.Scanner;
+public class Main
+{
+  public static void main(String args[])
+{ 
+  Scanner sc=new Scanner(System.in);
+  System.out.println("Enter the first value");
+  int num1=sc.nextInt();
+  System.out.println("Enter the second value");
+  int num2=sc.nextInt();
+  int sum=num1+num2;
+  System.out.println("The value of sum is:\n"+sum);
+  
+  System.out.println("Enter the third value");
+  int num3=sc.nextInt();
+  System.out.println("Enter the fourth value");
+  int num4=sc.nextInt();
+  int sum1=num3-num4;
+  System.out.println("The value of sum1 is:\n"+sum1);
+  
+  System.out.println("Enter the fivth value");
+  int num5=sc.nextInt();
+  System.out.println("Enter the six value");
+  int num6=sc.nextInt();
+  int sum2=num5*num6;
+  System.out.println("The value of sum2 is\n:"+sum2);
+  
+  System.out.println("Enter the seven value");
+  int num7=sc.nextInt();
+  System.out.println("Enter the eight value");
+  int num8=sc.nextInt();
+  int sum3=num7/num8;
+  System.out.println("The value of sum2 is\n:"+sum3);
+  
+  
+  System.out.println("Enter the nine value");
+  int num9=sc.nextInt();
+  System.out.println("Enter the ten value");
+  int num10=sc.nextInt();
+  int sum4=num9%num10;
+  System.out.println("The value of sum2 is\n:"+sum4);
+  }
+}
+====================================================================
+Q2 
+import java.util.Scanner;
+public class Main2
+{
+  public static void main(String args[])
+{ 
+  Scanner sc=new Scanner(System.in);
+  System.out.println("Enter the first value");
+  int num1=sc.nextInt();
+  System.out.println("Enter the second value");
+  int num2=sc.nextInt();
+  System.out.println("Enter the third value");
+  int num3=sc.nextInt();
+  System.out.println("Enter the fourth value");
+  int num4=sc.nextInt();
+  int sum=num1+num2-(num3*num4);
+  System.out.println("The value of sum1 is:"+sum);
+  }
+}
+======================================================================
+Q3 
+import java.util.Scanner;
+public class Main3
+{
+  public static void main(String args[])
+{ 
+  Scanner sc=new Scanner(System.in);
+  System.out.println("Enter the first value");
+  float num1=sc.nextFloat();
+  System.out.println("Enter the second value");
+  float num2=sc.nextFloat();
+  System.out.println("Enter the third value");
+  int num3=sc.nextInt();
+  System.out.println("Enter the fourth value");
+  float num4=sc.nextFloat();
+  System.out.println("Enter the fivth value");
+  int num5=sc.nextInt();
+  float sum=num1*num2+num3-(num4/num5);
+  System.out.println("The value of sum1 is:"+sum);
+  }
+}
+ ======================================================================
+Q4 Area of circul(pi2)
+
+import java.util.Scanner;
+public class Main4
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the  first value");
+        int num1=sc.nextInt();
+        System.out.println("Enter the  second value");
+        float num2=sc.nextFloat();
+        System.out.println("Enter the third value");
+        float num3=3.14f;
+        float area = num1*num2*num3;
+        System.out.println(area);
+    }
+}
+======================================================================
+Q5  Area of squar
+
+import java.util.Scanner;
+public class Main5 
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the  first value");
+        int num1=sc.nextInt();
+        System.out.println("Enter the  second value");
+        int num2=sc.nextInt();
+        int res = num1*num2;
+        System.out.println(res);
+    }
+}
+===================================================================
+Q6  Area of traingel
+
+import java.util.Scanner;
+public class Main6 
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the  first value");
+        int num1=sc.nextInt();
+        System.out.println("Enter the  second value");
+        int num2=sc.nextInt();
+        System.out.println("Enter the  third value");
+        float num3=1/2;
+        float res=num1*num2*num3;
+        System.out.println(res);
+    }
+}
+===============================================================
+Q7   Vloume of sphare
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the first value");
+		float s=sc.nextFloat();
+		System.out.println("Enter the second value");
+		float pi=sc.nextFloat();
+		System.out.println("Enter the third value");
+		int r=sc.nextInt();
+		float res=s*pi*r*r*r;
+		System.out.println(res);
+	}
+}
+============================================================
+Q8  Vloume of hemisphare
+
+import java.util.Scanner;
+public class Main8
+{
+	public static void main(String[] args)
+
+{
+		Scanner sc=new Scanner(System.in);
+		float s=sc.nextFloat();
+		float pi=sc.nextFloat();
+		int r=sc.nextInt();
+	        float res=s*pi*r*r*r;
+		System.out.println(res);
+	}
+}
+============================================================
+Q9 
+import java.util.Scanner;
+public class Main
+ {
+    public static void main(String[] args)
+     {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter an integer: ");
+        int myInt = sc.nextInt();
+
+        System.out.print("Enter a float: ");
+        float myFloat = sc.nextFloat();
+
+        System.out.print("Enter a double: ");
+        double myDouble = sc.nextDouble();
+
+        System.out.print("Enter a character: ");
+        char myChar = sc.next().charAt(0);
+
+        System.out.print("Enter a long: ");
+        long myLong = sc.nextLong();
+
+        System.out.print("Enter a short: ");
+        short myShort = sc.nextShort();
+
+        System.out.print("Enter a boolean (true or false): ");
+        boolean myBoolean = sc.nextBoolean();
+
+        System.out.print("Enter a byte: ");
+        byte myByte = sc.nextByte();
+
+        System.out.print("Enter a string: ");
+        String myString = sc.next();
+
+        System.out.println("You entered:");
+        System.out.println("myInt = " + myInt);
+        System.out.println("myFloat = " + myFloat);
+        System.out.println("myDouble = " + myDouble);
+        System.out.println("myChar = " + myChar);
+        System.out.println("myLong = " + myLong);
+        System.out.println("myShort = " + myShort);
+        System.out.println("myBoolean = " + myBoolean);
+        System.out.println("myByte = " + myByte);
+        System.out.println("myString = " + myString);
+    }
+}
+============================================================
+Q10 swap number print without using third variable
+
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+{
+    int a = 5;
+    int b = 10;
+
+    a = a + b;
+    b = a - b;
+    a = a - b;
+
+   System.out.println("value of: " + a); 
+   System.out.println("value of b: " + b); 
+  }
+}
