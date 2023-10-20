@@ -1,0 +1,161 @@
+1)while : 
+reverse number 
+657
+756 
+
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        int num = 657;
+        int rev = 0;
+        while (num != 0) 
+        {
+            int num2 = num % 10;
+            rev = rev* 10 + num2;
+            num /= 10;
+        }
+        
+        System.out.println("Reversed number: " + rev);
+    }
+}
+========================================================================
+2)pallindrome number 
+  12321 
+
+public class Main
+{
+  public static void main(String[] args) 
+  {
+    int num=12321;
+    int rev=0;
+    int or=num;
+    while (num!=0) 
+    {
+      int rem=num % 10;
+      rev = rev*10+rem;
+      num/=10;
+    }
+    if (or == rev) 
+    {
+      System.out.println(or + " is a palindrome number.");
+    } 
+    else 
+    {
+      System.out.println(or+ " is not a palindrome number.");
+    }
+  }
+}
+==============================================================================
+3)armstrong number 
+153 
+public class Main
+{
+  public static void main(String[] args) 
+  {
+    int number = 153;
+    int originalNumber = number;
+    int result = 0;
+    int n = 0;
+    while (originalNumber != 0) 
+    {
+      originalNumber /= 10;
+      n++;
+    }
+    originalNumber = number;
+    while (originalNumber != 0) 
+    {
+      int remainder = originalNumber % 10;
+      result += Math.pow(remainder, n);
+      originalNumber /= 10;
+    }
+    if (result == number)
+    {
+      System.out.println(number + " is an Armstrong number.");
+    } else
+    {
+      System.out.println(number + " is not an Armstrong number.");
+    }
+  }
+}
+===============================================================================
+4) prime number
+a)check number prime 
+b)1--->100 prime number 
+=================================================================================
+5) factorial number print
+
+public class Main 
+{
+  public static void main(String[] args) 
+  {
+    int number = 5;
+    int f = 1;
+    int i = 1;
+    while (i <= number) {
+      f*=i;
+      i++;
+    }
+    System.out.println("Factorial of " + number + " is: " + f);
+  }
+}
+================================================================
+6)
+perfect number : 
+6 
+1 2 3 
+1 + 2 + 3 => 6
+ 
+public class Main 
+{
+  public static void main(String[] args) 
+  {
+    int num = 6;
+    int sum = 0;
+    int div = 1;
+    while (div < num)
+    {
+      if (num % div == 0) 
+      {
+        sum += div;
+      }
+      div++;
+    }
+    if (sum == num)
+    {
+      System.out.println(num + " is a perfect number.");
+    } else
+    {
+      System.out.println(num + " is not a perfect number.");
+    }
+  }
+}
+==================================================================
+7)public class Main
+{
+    public static void main(String args[])
+{
+int num = 9;
+int square = num * num;
+int sum = 0;
+
+while (square != 0) 
+{
+    int digit = square % 10;
+    sum += digit;
+    square /= 10;
+}
+
+if (sum == num)
+{
+    System.out.println(num + " is a neon number.");
+} else
+{
+    System.out.println(num + " is not a neon number.");
+   }
+  }
+}
+
+
+
+
