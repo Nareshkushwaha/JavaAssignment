@@ -1,0 +1,156 @@
+Q1  23+78
+
+public class Main
+{
+    public static void main(String args[])
+    {
+    int a=23;
+    int b=78;
+    int c=a+b;
+    System.out.println(c);
+    }
+}
+----------------------------------------------
+ Q1 (78-23)
+public class Main
+{
+    public static void main(String args[])
+    {
+    int a=78;
+    int b=23;
+    int c=a-b;
+    System.out.println(c);
+    }
+}
+------------------------------------------------
+Q1 (78*23)
+public class Main
+{
+    public static void main(String args[])
+    {
+    int a=78;
+    int b=23;
+    int c=a*b;
+    System.out.println(c);
+    }
+}
+-----------------------------------------------
+Q1 (78/23)
+public class Main
+{
+    public static void main(String args[])
+    {
+    int a=78;
+    int b=23;
+    int c=a/b;
+    System.out.println(c);
+    }
+}
+------------------------------------------------
+Q1 (78%23)
+public class Main
+{
+    public static void main(String args[])
+    {
+    int a=78;
+    int b=23;
+    int c=a%b;
+    System.out.println(c);
+    }
+}
+----------------------------------------------
+Q2
+public class Main
+{
+    public static void main(String args[])
+    {
+    int a=34;
+    int b=8;
+    int c=23;
+    int d=2;
+    int e=34+8-(23*2);
+    System.out.println(e);
+    }
+}
+-----------------------------------------------------
+Q3(3.4 *1.2+67-(4.2/2)
+public class Main
+{
+    public static void main(String args[])
+    {
+    float a=3.4f;
+    float b=1.2f;
+    int c=67;
+    float d=4.2f;
+    int e=2;
+    float f=3.4f*1.2f+67-(4.2f/2);
+    System.out.println(f);
+    }
+}
+--------------------------------------------------
+Q4 area of circul(pi r2)
+public class Main {
+    public static void main(String[] args) {
+        int r=20;
+        float pi=3.14f;
+        float area = r*r*pi;
+      System.out.println(area);
+    }
+}
+-------------------------------------------------
+Q5 area of squar
+public class Main {
+    public static void main(String[] args) {
+        int s=20;
+        int res=s*s;
+      System.out.println(res);
+    }
+}
+----------------------------------------------------
+Q6 area of triangle
+
+public class Main 
+{
+    public static void main(String[] args)
+ {
+        int b=20;
+        int h=30;
+        float a=1/2;
+        float res=b*h*a;
+      System.out.println(res);
+    }
+}
+-----------------------------------------------------
+Q7  volume of sphere 
+//volume = (4/3) · π · r3
+
+public class Main
+{
+	public static void main(String[] args) {
+	    int r=10;
+	    float pi=3.14f;
+	    float a =4/3f;
+	    
+	    
+	    float  res=r*r*r*pi*a;
+		System.out.println(res);
+	}
+}
+-----------------------------------------------------
+Q8 volume of hemisphere 
+//volume = (2/3) pi r^3
+
+public class Main
+{
+	public static void main(String[] args) {
+	    int r=10;
+	    float pi=3.14f;
+	    float a =2/3f;
+	    
+	    
+	    float  res=r*r*r*pi*a;
+		System.out.println(res);
+	}
+}
+
+
