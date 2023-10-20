@@ -1,0 +1,256 @@
+Q1)java program to find out whether a given year is a leap year or not:
+
+import java.util.*;
+public class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the year");
+        int year=sc.nextInt();
+        if(year%4==0)
+        {
+            System.out.println("This is leap year");
+        }
+        else
+        {
+            System.out.println("This is not leap year");
+        }
+    }
+    
+}
+===========================================================================================
+2)java program to convert temperature from Fahrenheit to Celsius and Celsius to Fahrenheit
+
+import java.util.*;
+public class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the  tempracter in fahrenite");
+        int temp=sc.nextInt();
+        String s=sc.next();
+        if(s.equals("faranite"))
+        {
+        float f=(temp*9/5f)+32;
+        System.out.print("Tempracter is fahrenite"+f);
+       }
+       else
+       {  
+           float c=(temp-32)*9/5f;
+           System.out.println("tempracter is celcius"+c);
+           }
+       
+    }
+}
+==================================================================
+4)java program to check whether a character is an alphabet or not
+input =a =alpha 
+3 =this is a digit
+ 
+import java.util.*;
+public class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the input");
+        char ch=sc.next().charAt(0);
+        
+        if(ch>='a'&&ch<='z')
+        {
+            System.out.println("This the alphabat");
+        }
+        else if
+        (ch>='A'&&ch<='Z')
+        {
+            System.out.println("This is alphabte");
+        }
+        else
+        {
+            System.out.println("This is  digit");
+        }
+    }
+}
+================================================================================
+Q8) 5 number input 
+>40 
+average 
+3. 45 to 50 – D
+4. 50 to 60 – C
+5. 60 to 80 – B
+6. Above 80 – A 
+otherwise fail 
+import java.util.*;
+
+public class Main
+ {
+    public static void main(String[] args) 
+{
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the  value:");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        int d=sc.nextInt();
+        int e=sc.nextInt();
+        int sum=a+b+c+d+e; 
+
+        float average=sum /5.0f;
+
+        if (average>=45&&average<50) 
+        {
+            System.out.println("Grade: D");
+        } 
+        else if (average>=50&&average<60)
+        {
+            System.out.println("Grade: C");
+        }
+        else if (average>=60&&average<=80) 
+        {
+            System.out.println("Grade: B");
+        }
+        else if (average>80)
+        {
+            System.out.println("Grade: A");
+        }
+        else 
+        {
+            System.out.println("Fail");
+        }
+    }
+}
+================================================================================
+Q9  three number max only use max
+
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the frist  value");
+        int num1=sc.nextInt();
+        System.out.println("Enter the second  value");
+        int num2=sc.nextInt();
+        System.out.println("Enter the third value");
+        int num3=sc.nextInt();
+        
+        if(num1>num2&&num1>num3)
+        {
+            System.out.println("num1 is greater");
+        }
+        else if(num2>num3&&num2>num1)
+        {
+            System.out.println("num2 is greater");
+        }
+        else
+        {
+            System.out.println("num3 is greater");
+           }
+         }
+        }
+========================================================================================
+Q10) switch(in c)  A----Z =upper case 
+a----z =lower case 
+0---9 =digit
+
+import java.util.*;
+public class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the character");
+        char ch=sc.next().charAt(0);
+        if(ch>='a'&&ch<='z')
+        {
+        System.out.println("This is samll alphabte");
+        }
+        else if
+        (ch>='A'&&ch<='Z')
+        {
+            System.out.println("This is capitale alphabte");
+        }
+        else
+        {
+            System.out.println("This is digit");
+        }
+        
+    }
+}
+===========================================================================================
+11) 
+salalry :
+holidays (1) =full salary 
+2-5 =5% 
+5-14 =10% 
+15 =50% 
+else =not salary 
+
+output : 
+name:
+address: 
+bank details: 
+salary : 
+alot :
+ holidays 
+
+import java.util.*;
+public class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter your name");
+        String N=sc.next();
+        System.out.println("Enter your Adderss");
+        String A=sc.next();
+        System.out.println("Enter you bank details");
+        String B=sc.next();
+        System.out.println("Enter you holiday");
+        int h=sc.nextInt();
+        int sallary;
+        
+        if
+        (h>=2&&h<=5)
+        {
+            System.out.println("sallry"+95000);
+         }
+         else if
+         (h>5&&h<=10)
+         {
+             System.out.println("sallary"+90000);
+         }
+         else if
+         (h==15)
+         {
+             System.out.println("sallary"+50000);
+         }
+         else
+        {
+            System.out.println("alot");
+        }
+        
+    }
+}
+==============================================================
+12)
+electric city bill : 
+4 unit 
+40 
+1- 10 = 10% 
+11-20 =15% 
+21-40 =30% 
+50 =50% 
+
+output : 
+name:
+unit :3 
+amout 30 
+discout : 10% 
+total pay amount : 
+
+
+
