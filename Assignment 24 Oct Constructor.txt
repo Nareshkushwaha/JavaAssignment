@@ -1,0 +1,405 @@
+1)default constructor 
+class A 
+A() :addiotion 
+
+Main()
+access
+
+user input 
+
+import java.util.Scanner;
+ class A
+{
+    Scanner sc=new Scanner(System.in);
+    A()
+{
+    int a=sc.nextInt();
+    int b=sc.nextInt();
+    System.out.println(a+b);
+    }
+    
+}
+public class Main
+{
+	public static void main(String[] args)
+ {
+	    new A();
+		
+	}
+}
+------------------------------------------------------
+2)
+class A 
+instance variable 
+A() :addition 
+
+void show()
+substraction 
+
+void show1() =>mutli 
+
+void show3() =>div 
+
+void show4()=>modular 
+Main()
+access
+
+user input 
+
+import java.util.Scanner;
+ class A
+{
+    Scanner sc=new Scanner(System.in);
+    int k;
+    int j;
+    A(){
+    int a=sc.nextInt();
+    int b=sc.nextInt();
+    System.out.println(a+b);
+    k=a;
+    j=b;
+    }
+    void show1(){
+        System.out.println(k-j);
+    }
+    void show2(){
+        System.out.println(k*j);
+    }
+    void show3(){
+        System.out.println(k/j);
+    }
+    void show4(){
+        System.out.println(k%j);
+    }
+    
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    A a=new A();
+	    a.show1();
+	    a.show2();
+	    a.show3();
+	    a.show4();
+	    
+	    
+	    
+	    
+		
+	}
+}
+---------------------------------------------------------------------
+3)
+instance variable 
+A() :addition 
+
+void show() no return and no argument 
+substraction 
+
+void show1() =>mutli no return and  argument 
+
+void show3() =>div return and no argument 
+
+void show4()=>modular return and argument 
+Main()
+access
+
+user input 
+
+import java.util.*;
+class A
+{
+    Scanner sc=new Scanner(System.in);
+    int k;
+    int j;
+    A(){
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        k=a;
+        j=b;
+        System.out.println(a+b);
+    }
+    void show1()
+    {
+        System.out.println(k-j);
+    }
+    void show2(int k,int j)
+    {
+
+        this.k=k;
+        this.j=j;
+        System.out.println(k*j);
+    }
+    int  show3()
+   {
+
+        return k/j;
+    }
+    int  show4(int k,int j)
+    {
+        this.k=k;
+        this.j=j;
+
+
+        return k%j;
+    }
+
+}
+public class Pattern1
+ {
+    public static void main(String[] args) 
+{
+        A a=new A();
+        a.show1();
+        System.out.println(a.show3());
+        System.out.println(a.show4(3,5))
+}
+
+}
+------------------------------------------------------------------
+construtor k through all data type ki by default value print krogey 
+4)
+import java.util.*;
+class A{
+    int a;
+    char b;
+    float c;
+    byte d;
+    boolean e;
+    short f;
+    long g;
+    double h;
+    A(){
+        System.out.println(a+" "+b+" "+c+" "+d+" "+e+" "+f+" "+g+" "+h);
+    }
+
+}
+public class Pattern1 {
+    public static void main(String[] args) {
+        new A();
+}
+
+}
+
+-------------------------------------------------------------------------------------
+		PARAMETERISED CONSTRUCTOR 
+********************************************************************************************************
+1)
+class A 
+A() =>parameteriz constructors addition 
+
+
+Main()
+access
+user input 
+
+import java.util.Scanner;
+class A{
+
+    A(int a,int b){
+
+        System.out.println(a+b);
+    }
+
+}
+public class Pattern1
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        new A(a,b);
+
+    }
+}
+-------------------------------------------------------------
+2)
+Main()
+Main() =>para addition 
+access
+user input 
+import java.util.Scanner;
+
+public class Pattern1
+{
+    Pattern1(int a,int b){
+        System.out.println(a+b);
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        new Pattern1(a,b);
+
+
+    }
+}
+
+---------------------------------
+3)
+class A 
+A() =>para addition 
+
+void show1() sub no return and no argument 
+
+void show2() mul    return and no argument 
+
+void show3() div   no return and argument 
+
+void show4() modular   return and  argument 
+
+Main()
+access
+user input
+import java.util.*;
+class A{
+
+    int k;
+    int j;
+    A(int a,int b){
+
+        k=a;
+        j=b;
+        System.out.println(a+b);
+    }
+    void show1(){
+        System.out.println(k-j);
+    }
+    void show2(int k,int j){
+
+        this.k=k;
+        this.j=j;
+        System.out.println(k*j);
+    }
+    int  show3(){
+
+        return k/j;
+    }
+    int  show4(int k,int j){
+        this.k=k;
+        this.j=j;
+
+
+        return k%j;
+    }
+
+}
+public class Pattern1 {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int i=sc.nextInt();
+        int b=sc.nextInt();
+        A a=new A(i,b);
+        a.show1();
+        System.out.println(a.show3());
+        System.out.println(a.show4(3,5));
+}
+
+}
+
+
+
+--------------------------------------------------------------------------------------
+4)
+Main()
+instance vairable 
+Main() =>para addition 
+access
+user input 
+import java.util.*;
+
+public class Pattern1 {
+    int k;
+    int j;
+    Pattern1(int a,int b){
+        k=a;
+        j=b;
+    }
+    void show(){
+        System.out.println(k+" "+j);
+    }
+
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int i=sc.nextInt();
+        int b=sc.nextInt();
+        Pattern1 a=new Pattern1(i,b);
+        a.show();
+}
+
+}
+-------------
+5)
+Main()
+Main() =>para addition 
+access
+user input 
+
+-----------------
+6)
+class A 
+instance varaible 
+A() =>para addition 
+
+void show1() sub no return and no argument 
+
+void show2() mul    return and no argument 
+
+void show3() div   no return and argument 
+
+void show4() modular   return and  argument 
+
+Main()
+access
+user input
+
+import java.util.*;
+class A{
+
+    int k;
+    int j;
+    A(int a,int b){
+
+        k=a;
+        j=b;
+        System.out.println(a+b);
+    }
+    void show1(){
+        System.out.println(k-j);
+    }
+    void show2(int k,int j){
+
+        this.k=k;
+        this.j=j;
+        System.out.println(k*j);
+    }
+    int  show3(){
+
+        return k/j;
+    }
+    int  show4(int k,int j){
+        this.k=k;
+        this.j=j;
+        return k%j;
+    }
+
+}
+public class Pattern1 {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int i=sc.nextInt();
+        int b=sc.nextInt();
+        A a=new A(i,b);
+        a.show1();
+        System.out.println(a.show3());
+        System.out.println(a.show4(3,5));
+}
+
+}
+=================================================================================
+
+
+
