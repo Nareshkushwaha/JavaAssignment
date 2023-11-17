@@ -1,0 +1,91 @@
+static :
+class A 
+
+insta variable static :four 
+
+method()
+
+Main() access 
+
+class A{
+    static int a=0;
+    A(){
+        a++;
+        System.out.println("the value of ia a: "+a);
+    }
+}
+public class Main
+{
+    public static void main(String args[])
+    {
+        A k=new A();
+        A k1=new A();
+        A k2=new A();
+        A k3=new A();
+         
+    }
+}
+===============================================================
+class A 
+
+insta variable static :four 
+
+static method(): return and argument 
+
+Main() access 
+import java.util.*;
+class A{
+    static int a=10;
+    static int b=4;
+    static float f=4f;
+   A(){
+       ++a;
+       --b;
+       ++f;
+   }
+   static void show(){
+       System.out.println(a);
+       System.out.println(b);
+       System.out.println(f);
+
+   }
+}
+public class Pattern1 {
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+        new A().show();
+    }
+}
+-----------------------
+factory method :
+A() =>paramterised 
+
+import java.util.*;
+class A{
+    static int a=10;
+    static int b=4;
+    static float f=4f;
+   private A(int a){
+       ++a;
+       --b;
+       ++f;
+   }
+   static void show(int a){
+       new A( a);
+       System.out.println(a);
+       System.out.println(b);
+       System.out.println(f);
+   }
+}
+public class Pattern1 {
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+        A.show(2);
+
+
+
+
+    }
+}
