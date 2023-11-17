@@ -1,0 +1,739 @@
+1)
+class A 
+helooo
+
+class B 
+hiiii
+
+class Main 
+access
+
+class A{
+    void print(){
+        System.out.println("hello");
+    }
+
+
+}
+class B extends A{
+    void print1(){
+        System.out.println("hii");
+    }
+        }
+
+public class Pattern1 {
+    public static void main(String[] args) {
+        B k=new B();
+        k.print();
+        k.print1();
+        
+
+    }
+}
+---------------------------------------------------------
+
+2)
+class A 
+method 
+show1() add :no return and no argument 
+show2() add :no return and  argument 
+
+class B 
+show3() add : return and no argument 
+show4() add: return and  argument 
+
+class Main 
+access
+
+user input 
+
+import java.util.Scanner;
+class A{
+    void Show1(){
+        int a=1;
+        int b=2;
+        System.out.println(a+b);
+
+    }
+    void Show2(int a, int b){
+        System.out.println(a+b);
+
+
+    }
+
+
+}
+class B extends A{
+    int  Show3(){
+        int a=1;
+        int b=2;
+
+        return a+b;
+
+
+    }
+    int  Show4(int a, int b){
+        return a+b;
+
+
+    }
+
+        }
+
+public class Pattern1 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+
+        B k=new B();
+       k.Show1();
+       k.Show2(a,b);
+        System.out.println(k.Show3());
+        System.out.println(k.Show4(a,b));
+
+
+    }
+}
+------------------------------------------------------------------------------------------------------------------------
+3)
+class A 
+instance varaible 
+A() =>parameterised 
+show1() add :no return and no argument 
+show2() add :no return and  argument 
+
+class B extends A 
+instance varaible 
+B() =>parameterised 
+
+show3() add : return and no argument 
+show4() add: return and  argument 
+
+class Main 
+access
+
+user input
+
+import java.util.Scanner;
+class A{
+    int a;
+    int b;
+    A(int a,int b){
+        this.a=a;
+        this.b=b;
+
+    }
+    void Show1(){
+        System.out.println(a+b);
+
+
+
+    }
+    void Show2(int a, int b){
+        System.out.println(a+b);
+
+
+    }
+
+
+}
+class B {
+    int d;
+    int e;
+    B(int d,int e){
+        this.d=d;
+        this.e=e;
+
+    }
+    int  Show3(){
+
+        return d+e;
+
+
+    }
+    int  Show4(int a, int b){
+        return a+b;
+
+
+    }
+
+        }
+
+public class Pattern1 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        A i=new A(a,b);
+
+
+        B k=new B(a,b);
+
+
+       i.Show1();
+       i.Show2(1,2);
+        System.out.println(k.Show3());
+        System.out.println(k.Show4(5,7));
+
+
+    }
+} 
+--------------------------------------------------
+4)
+class A 
+method 
+show1() add :no return and no argument 
+show2() :return and no argument (return short )
+show5() :return and no argument (return string )
+show7() :return and no argument (return float )
+show9() :return and no argument (return long )
+
+
+class B 
+show3() add :no  return and no argument 
+show4()  return and  argument (byte) 
+show6() ::return and  argument (return char )
+show8() ::return and  argument (return double )
+show10() ::return and  argument (return boolean )
+
+class Main 
+access
+
+user input 
+import java.util.Scanner;
+class A{
+
+
+    void Show1(){
+        int a=1;
+        int b=3;
+        System.out.println(a+b);
+
+
+
+    }
+    short Show2(){
+        return 4;
+
+
+    }
+    String  Show5(){
+        return "hello";
+
+
+
+    }
+    float Show7(){
+        return 4;
+
+
+
+    }
+    long Show9(){
+        return 4;
+
+
+
+    }
+
+
+}
+class B extends A {
+
+    void   Show3(){
+        int d=1;
+        int e=4;
+
+        System.out.println(d+e);
+
+
+    }
+    byte  Show4(){
+        return 125;
+
+
+    }
+    char Show6(){
+        return 'a';
+
+
+
+    }
+    boolean Show8(){
+        return true;
+
+
+
+
+    }
+    double Show10(){
+        return 4.5;
+
+
+
+    }
+
+        }
+
+public class Pattern1 {
+    public static void main(String[] args) {
+        
+
+
+
+        B k=new B();
+
+
+       k.Show1();
+        System.out.println(k.Show2());;
+        System.out.println(k.Show5());
+        System.out.println(k.Show7());
+        System.out.println(k.Show9());
+
+        k.Show3();
+        System.out.println(k.Show4());
+        System.out.println(k.Show6());
+        System.out.println(k.Show8());
+        System.out.println(k.Show9());
+
+
+    }
+}
+------------------------------------------------
+5)
+class A 
+instance varaible 
+A() :paramterised constructor 
+method 
+show1() add :no return and no argument 
+show2() :return and no argument (return short )
+show5() :return and no argument (return string )
+show7() :return and no argument (return float )
+show9() :return and no argument (return long )
+
+
+class B 
+instance varaible 
+B() :paramterised constructor 
+show3() add :no  return and no argument 
+show4()  return and  argument (byte) 
+show6() ::return and  argument (return char )
+show8() ::return and  argument (return double )
+show10() ::return and  argument (return boolean )
+
+class Main 
+access
+
+user input 
+import java.util.Scanner;
+class A{
+    int a;
+    int b;
+    A(int a,int b){
+        this.a=a;
+        this.b=b;
+
+    }
+
+
+    void Show1(){
+
+        System.out.println(a+b);
+
+
+
+    }
+    short Show2(){
+        return 4;
+
+
+    }
+    String  Show5(){
+        return "hello";
+
+
+
+    }
+    float Show7(){
+        return 4;
+
+
+
+    }
+    long Show9(){
+        return 4;
+
+
+
+    }
+
+
+}
+class B  {
+    int d;
+    int e;
+    B(int d,int e){
+        this.d=d;
+        this.e=e;
+
+    }
+
+    void   Show3(){
+
+
+        System.out.println(d+e);
+
+
+    }
+    byte  Show4(){
+        return 125;
+
+
+    }
+    char Show6(){
+        return 'a';
+
+
+
+    }
+    boolean Show8(){
+        return true;
+
+
+
+
+    }
+    double Show10(){
+        return 4.5;
+
+
+
+    }
+
+        }
+
+public class Pattern1 {
+    public static void main(String[] args) {
+
+
+
+
+        B k=new B(3,4);
+        A i=new A(4,5);
+
+
+       i.Show1();
+        System.out.println(i.Show2());;
+        System.out.println(i.Show5());
+        System.out.println(i.Show7());
+        System.out.println(i.Show9());
+
+        k.Show3();
+        System.out.println(k.Show4());
+        System.out.println(k.Show6());
+        System.out.println(k.Show8());
+        System.out.println(k.Show10());
+
+
+    }
+}
+--------------------------------------------
+6)
+class A
+A()
+hello
+
+class B extends A 
+B() 
+hiii
+class Main 
+access 
+
+import java.util.Scanner;
+class A{
+    A(){
+        System.out.println("hello");
+    }
+
+
+
+}
+class B extends A {
+    B(){
+        System.out.println("hi");
+    }
+
+
+
+}
+
+public class Pattern1 {
+    public static void main(String[] args) {
+
+
+
+
+        B k=new B();
+        
+
+
+
+
+
+
+    }
+}
+------------------------------------------------------
+7)
+class A
+A()
+add
+
+class B extends A 
+B() 
+add
+class Main 
+access
+
+user input 
+
+import java.util.Scanner;
+class A{
+    Scanner sc=new Scanner(System.in);
+    A(){
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        System.out.println(a+b);
+
+
+    }
+
+
+
+}
+class B extends A {
+    Scanner sc=new Scanner(System.in);
+    B(){
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        System.out.println(a+b);
+
+    }
+
+
+
+}
+
+public class Pattern1 {
+    public static void main(String[] args) {
+
+
+
+
+        B k=new B();
+
+
+
+
+
+
+
+    }
+}
+--------------------------------------------------------
+8)
+class A 
+instance varaible 
+A() :paramterised constructor 
+method 
+show1() add :no return and no argument 
+show2() :return and no argument (return short )
+show5() :return and no argument (return string )
+show7() :return and no argument (return float )
+show9() :return and no argument (return long )
+
+
+class Main 
+instance varaible 
+Main() :paramterised constructor 
+
+show3() add :no  return and no argument 
+show4()  return and  argument (byte) 
+show6() ::return and  argument (return char )
+show8() ::return and  argument (return double )
+show10() ::return and  argument (return boolean )
+access
+
+user input 
+
+import java.util.Scanner;
+class A{
+    int a;
+    int b;
+    A(int a,int b){
+        this.a=a;
+        this.b=b;
+
+    }
+
+
+    void Show1(){
+
+        System.out.println(a+b);
+
+
+
+    }
+    short Show2(){
+        return 4;
+
+
+    }
+    String  Show5(){
+        return "hello";
+
+
+
+    }
+    float Show7(){
+        return 4;
+
+
+
+    }
+    long Show9(){
+        return 4;
+
+
+
+    }
+
+
+
+
+
+}
+
+
+public class Pattern1 {
+    int d;
+    int e;
+    Pattern1(int d,int e){
+        this.d=d;
+        this.e=e;
+
+    }
+
+    void   Show3(){
+
+
+        System.out.println(d+e);
+
+
+    }
+    byte  Show4(){
+        return 125;
+
+
+    }
+    char Show6(){
+        return 'a';
+
+
+
+    }
+    boolean Show8(){
+        return true;
+
+
+
+
+    }
+    double Show10(){
+        return 4.5;
+
+
+
+    }
+    public static void main(String[] args) {
+        A k=new A(2,4);
+        Pattern1 p=new Pattern1(2,3);
+        k.Show1();
+        System.out.println(k.Show2());
+        System.out.println(k.Show5());
+        System.out.println(k.Show7());
+        System.out.println(k.Show9());
+
+        p.Show3();
+        System.out.println(p.Show4());
+        System.out.println(p.Show6());
+        System.out.println(p.Show8());
+        System.out.println(p.Show10());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
+------------------------------------------------------------------
+9)getter setter 
+class A 
+instance varaible 
+A() :paramterised constructor 
+method 
+show1() add :no return and no argument 
+show2() :return and no argument (return short )
+show5() :return and no argument (return string )
+show7() :return and no argument (return float )
+show9() :return and no argument (return long )
+
+
+class Main 
+instance varaible 
+Main() :paramterised constructor 
+
+show3() add :no  return and no argument 
+show4()  return and  argument (byte) 
+show6() ::return and  argument (return char )
+show8() ::return and  argument (return double )
+show10() ::return and  argument (return boolean )
+access
+
+user input 
+------------------------------------------------------------------
+10)getter setter method 
+class A 
+method 
+show1() add :no return and no argument 
+show2() :return and no argument (return short ) (varaible4) 
+show5() :return and no argument (return string ) 3 
+show7() :return and no argument (return float ) 2 
+show9() :return and no argument (return long ) 1 
+
+
+class B 
+show3() add :no  return and no argument 5 
+show4()  return and  argument (byte) 4 
+show6() ::return and  argument (return char ) 3 
+show8() ::return and  argument (return double ) 2 
+show10() ::return and  argument (return boolean ) 1 
+
+class Main 
+access
+
+user input 
