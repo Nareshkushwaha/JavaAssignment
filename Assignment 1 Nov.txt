@@ -1,0 +1,1344 @@
+
+Conversation opened. 1 read message.
+
+Skip to content
+Using Gmail with screen readers
+5 of 4,727
+(no subject)
+Inbox
+
+Ashutosh Sharma <ashutosh2ever@gmail.com>
+Attachments
+10:56 AM (2 hours ago)
+to me
+
+
+ 4 Attachments
+  •  Scanned by Gmail
+decalre :void show();
+define : 
+void show(){
+print()
+}
+1)interface A 
+method : no return and no argument :decalare
+method :return and argument : define 
+
+class B im 
+
+Main 
+access 
+user define 
+
+import java.util.*;
+interface A{
+    void show();
+    default  int show1(int a){
+        return a;
+    }
+
+}
+
+class C implements A{
+    public void show(){
+        System.out.println("hello");
+    }
+
+}
+
+
+
+
+
+public class Pattern1 {
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+        C k=new C();
+
+        k.show();
+        System.out.println(k.show1(2));
+
+
+
+
+
+
+        
+    }
+}
+-----------
+2)
+interface A 
+method : no return and no argument :decalare
+method :return and no argument : define 
+
+class B im 
+
+Main 
+access 
+
+user define 
+
+import java.util.*;
+interface A{
+    void show();
+    default  int show1(){
+        return 5;
+    }
+
+}
+
+class C implements A{
+    public void show(){
+        System.out.println("hello");
+    }
+
+}
+
+
+
+
+
+public class Pattern1 {
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+        C k=new C();
+
+        k.show();
+        System.out.println(k.show1());
+
+
+
+
+
+
+        
+    }
+}
+-----------------------------------------------------------------
+3)
+interface A 
+decalre 
+method1: no return and no argument 
+method2: no return and  argument 
+method3:  return and no argument 
+method4: return and  argument 
+
+class B im 
+
+Main 
+access 
+user input 
+import java.util.*;
+interface A{
+    void show();
+    void show1(int a);
+    int show2();
+    int show3(int a);
+
+
+
+}
+
+class C implements A{
+    public void show(){
+        System.out.println("hello");
+    }
+    public void show1(int a){
+        System.out.println(a);
+    }
+    public int show2(){
+        return 0;
+    }
+    public int show3(int a){
+        return a;
+    }
+
+}
+
+
+
+
+
+public class Pattern1 {
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+        C k=new C();
+
+        k.show();
+        k.show1(4);
+        System.out.println(k.show2());
+        System.out.println(k.show3(3));
+
+
+
+
+
+
+        
+    }
+}
+---------------------------------------------------------
+4)
+interface A 
+decalre 
+method1:  return and no argument :byte return type 
+method2: return and  argument :short 
+method3:  return and no argument :char 
+method4: return and  argument :float
+method5:  return and no argument :String return type 
+method6: return and  argument :boolean 
+method7:  return and no argument :long 
+method8: return and  argument :double
+method9: return and  argument :covariant return type 
+
+class B im 
+
+Main 
+access 
+user input 
+
+import java.util.*;
+interface A{
+    byte method1();
+    short method2(short a);
+    char method3();
+    float method4(float f);
+    String method5();
+    boolean method6(boolean b);
+    long method7();
+    double method8(double d);
+    A method9(int a);
+
+
+
+
+}
+
+class C implements A{
+    @Override
+    public byte method1() {
+        return 0;
+    }
+
+    @Override
+    public short method2(short a) {
+        return a;
+    }
+
+    @Override
+    public char method3() {
+        return 'a';
+    }
+
+    @Override
+    public float method4(float f) {
+        return f;
+    }
+
+    @Override
+    public String method5() {
+        return "ashu";
+    }
+
+    @Override
+    public boolean method6(boolean b) {
+        return b;
+    }
+
+    @Override
+    public long method7() {
+        return 0;
+    }
+
+    @Override
+    public double method8(double d) {
+        return d;
+    }
+
+    @Override
+    public A method9(int a) {
+        return this;
+    }
+}
+
+
+
+
+
+public class Pattern1 {
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+
+        C k=new C();
+
+        System.out.println(k.method1());
+        System.out.println(k.method2(sc.nextShort()));
+        System.out.println(k.method3());
+        System.out.println(k.method4(4));
+        System.out.println(k.method5());
+        System.out.println(k.method6(true));
+        System.out.println(k.method7());
+        System.out.println(k.method8(4));
+        System.out.println(k.method9(1));
+
+
+
+
+
+
+        
+    }
+}
+----------------------------------------------
+5)
+interface A 
+decalre 
+method1:  return and no argument :byte return type 
+method2: return and  argument :short 
+method3:  return and no argument :char 
+method4: return and  argument :float
+interface C ex A{
+method5:  return and no argument :String return type 
+method6: return and  argument :boolean 
+method7:  return and no argument :long 
+method8: return and  argument :double
+method9: return and  argument :covariant return type 
+
+
+}
+class B im 
+
+Main 
+access 
+user input 
+
+import java.util.*;
+interface A{
+    byte method1();
+    short method2(short a);
+    char method3();
+    float method4(float f);
+
+
+
+
+
+}
+interface B extends A{
+    String method5();
+    boolean method6(boolean b);
+    long method7();
+    double method8(double d);
+    A method9(int a);
+
+}
+
+class C implements B{
+    @Override
+    public byte method1() {
+        return 0;
+    }
+
+    @Override
+    public short method2(short a) {
+        return a;
+    }
+
+    @Override
+    public char method3() {
+        return 'a';
+    }
+
+    @Override
+    public float method4(float f) {
+        return f;
+    }
+
+    @Override
+    public String method5() {
+        return "ashu";
+    }
+
+    @Override
+    public boolean method6(boolean b) {
+        return b;
+    }
+
+    @Override
+    public long method7() {
+        return 0;
+    }
+
+    @Override
+    public double method8(double d) {
+        return d;
+    }
+
+    @Override
+    public A method9(int a) {
+        return this;
+    }
+}
+
+
+
+
+
+public class Pattern1 {
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+
+        C k=new C();
+
+        System.out.println(k.method1());
+        System.out.println(k.method2(sc.nextShort()));
+        System.out.println(k.method3());
+        System.out.println(k.method4(4));
+        System.out.println(k.method5());
+        System.out.println(k.method6(true));
+        System.out.println(k.method7());
+        System.out.println(k.method8(4));
+        System.out.println(k.method9(1));
+
+
+
+
+
+
+        
+    }
+}
+--------------------------------------------------------------------
+6)
+interface A
+method1:  return and no argument :byte return type 
+method2: return and  argument :short 
+
+interface B
+method3:  return and no argument :char 
+method4: return and  argument :float
+
+
+interface C
+method5:  return and no argument :String return type 
+method6: return and  argument :boolean 
+
+interface D
+method7:  return and no argument :long 
+method8: return and  argument :double
+
+
+class E imp abcd
+method9: return and  argument :covariant return type 
+
+import java.util.*;
+interface A{
+    byte method1();
+    short method2(short a);
+
+
+
+
+
+
+}
+interface B {
+    char method3();
+    float method4(float f);
+
+
+
+}
+interface  C{
+    String method5();
+    boolean method6(boolean b);
+
+
+}
+interface D{
+    long method7();
+    double method8(double d);
+
+
+
+}
+
+class E implements A,B,C,D{
+      E method9(int a){
+        return this;
+    }
+    @Override
+    public byte method1() {
+        return 0;
+    }
+
+    @Override
+    public short method2(short a) {
+        return a;
+    }
+
+    @Override
+    public char method3() {
+        return 'a';
+    }
+
+    @Override
+    public float method4(float f) {
+        return f;
+    }
+
+    @Override
+    public String method5() {
+        return "ashu";
+    }
+
+    @Override
+    public boolean method6(boolean b) {
+        return b;
+    }
+
+    @Override
+    public long method7() {
+        return 0;
+    }
+
+    @Override
+    public double method8(double d) {
+        return d;
+    }
+
+
+
+
+}
+
+
+
+
+
+public class Pattern1 {
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+
+        E k=new E();
+
+        System.out.println(k.method1());
+        System.out.println(k.method2(sc.nextShort()));
+        System.out.println(k.method3());
+        System.out.println(k.method4(4));
+        System.out.println(k.method5());
+        System.out.println(k.method6(true));
+        System.out.println(k.method7());
+        System.out.println(k.method8(4));
+        System.out.println(k.method9(1));
+
+
+
+
+
+
+        
+    }
+}
+
+--------------------------------------------------------------
+7)
+interface A
+method1:  return and no argument :byte return type 
+method2: return and  argument :short 
+
+interface B ex A
+method3:  return and no argument :char 
+method4: return and  argument :float
+
+
+interface C ex B
+method5:  return and no argument :String return type 
+method6: return and  argument :boolean 
+
+interface D ex C
+method7:  return and no argument :long 
+method8: return and  argument :double
+
+
+class E
+method9: return and  argument :covariant return type 
+import java.util.*;
+interface A{
+    byte method1();
+    short method2(short a);
+
+
+
+
+
+
+}
+interface B extends A{
+    char method3();
+    float method4(float f);
+
+
+
+}
+interface  C extends B{
+    String method5();
+    boolean method6(boolean b);
+
+
+}
+interface D extends C{
+    long method7();
+    double method8(double d);
+
+
+
+}
+
+class E implements D{
+      E method9(int a){
+        return this;
+    }
+    @Override
+    public byte method1() {
+        return 0;
+    }
+
+    @Override
+    public short method2(short a) {
+        return a;
+    }
+
+    @Override
+    public char method3() {
+        return 'a';
+    }
+
+    @Override
+    public float method4(float f) {
+        return f;
+    }
+
+    @Override
+    public String method5() {
+        return "ashu";
+    }
+
+    @Override
+    public boolean method6(boolean b) {
+        return b;
+    }
+
+    @Override
+    public long method7() {
+        return 0;
+    }
+
+    @Override
+    public double method8(double d) {
+        return d;
+    }
+
+
+
+
+}
+
+
+
+
+
+public class Pattern1 {
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+
+        E k=new E();
+
+        System.out.println(k.method1());
+        System.out.println(k.method2(sc.nextShort()));
+        System.out.println(k.method3());
+        System.out.println(k.method4(4));
+        System.out.println(k.method5());
+        System.out.println(k.method6(true));
+        System.out.println(k.method7());
+        System.out.println(k.method8(4));
+        System.out.println(k.method9(1);
+}
+}
+
+--------------------------------------------------------
+8)
+interface A
+method1:  return and no argument :byte return type 
+method2: return and  argument :short 
+
+interface B
+method3:  return and no argument :char 
+method4: return and  argument :float
+
+
+interface C
+method5:  return and no argument :String return type 
+method6: return and  argument :boolean 
+
+interface D
+method7:  return and no argument :long 
+method8: return and  argument :double
+
+
+class E
+method9: return and  argument :covariant return type 
+
+all interface anonymous ineer class 
+
+import java.util.*;
+interface A{
+    byte method1();
+    short method2(short a);
+
+
+
+
+
+
+}
+interface B{
+    char method3();
+    float method4(float f);
+
+
+
+}
+interface  C {
+    String method5();
+    boolean method6(boolean b);
+
+
+}
+interface D {
+    long method7();
+    double method8(double d);
+
+
+
+}
+
+class E {
+      E method9(int a){
+        return this;
+    }
+   
+
+
+
+
+}
+
+
+
+
+
+public class Pattern1 {
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+
+       A p=new A(){
+           public byte method1() {
+               return 0;
+           }
+
+           @Override
+           public short method2(short a) {
+               return a;
+           }
+
+
+       };
+       B p1=new B(){
+           public char method3() {
+               return 'a';
+           }
+
+           @Override
+           public float method4(float f) {
+               return f;
+           }
+
+       };
+       C p2=new C(){
+           public String method5() {
+               return "ashu";
+           }
+           public boolean method6(boolean b) {
+               return b;
+           }
+
+
+
+
+       };
+       D p3=new D(){
+           public double method8(double d) {
+               return d;
+           }
+           public long method7() {
+               return 0;
+           }
+
+       };
+        System.out.println(p.method1());
+        System.out.println(p.method2(sc.nextShort()));
+        System.out.println(p1.method3());
+        System.out.println(p1.method4(sc.nextFloat()));
+        System.out.println(p2.method5());
+        System.out.println(p2.method6(sc.nextBoolean()));
+        System.out.println(p3.method7());
+        System.out.println(p3.method8(sc.nextDouble()));
+       
+
+
+
+
+
+
+
+
+
+        
+    }
+}
+-----------------
+9)
+interface A
+method1:  return and no argument :byte return type 
+method2: return and  argument :short 
+
+interface B
+method3:  return and no argument :char 
+method4: return and  argument :float
+
+
+interface C
+method5:  return and no argument :String return type 
+method6: return and  argument :boolean 
+
+interface D
+method7:  return and no argument :long 
+method8: return and  argument :double
+
+
+class E
+method9: return and  argument :covariant return type 
+
+interface object through child classs 
+
+import java.util.*;
+interface A{
+    byte method1();
+    short method2(short a);
+
+
+
+
+
+
+}
+interface B extends A{
+    char method3();
+    float method4(float f);
+
+
+
+}
+interface  C extends B{
+    String method5();
+    boolean method6(boolean b);
+
+
+}
+interface D extends C{
+    long method7();
+    double method8(double d);
+
+
+
+}
+
+class E implements D{
+    E method9(int a){
+        return this;
+    }
+    @Override
+    public byte method1() {
+        return 0;
+    }
+
+    @Override
+    public short method2(short a) {
+        return a;
+    }
+
+    @Override
+    public char method3() {
+        return 'a';
+    }
+
+    @Override
+    public float method4(float f) {
+        return f;
+    }
+
+    @Override
+    public String method5() {
+        return "ashu";
+    }
+
+    @Override
+    public boolean method6(boolean b) {
+        return b;
+    }
+
+    @Override
+    public long method7() {
+        return 0;
+    }
+
+    @Override
+    public double method8(double d) {
+        return d;
+    }
+
+
+
+
+}
+
+
+
+
+
+public class Pattern1 {
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+
+        A k=new E();
+        B k1=new E();
+        C k2=new E();
+        D k3=new E();
+        E k4=new E();
+
+        System.out.println(k.method1());
+        System.out.println(k.method2(sc.nextShort()));
+        System.out.println(k1.method3());
+        System.out.println(k1.method4(4));
+        System.out.println(k2.method5());
+        System.out.println(k2.method6(true));
+        System.out.println(k3.method7());
+        System.out.println(k3.method8(4));
+        System.out.println(k4.method9(1));
+
+
+
+
+
+
+
+    }
+}
+
+
+10)
+interface A
+method1:  return and no argument :byte return type define 
+method2: return and  argument :short decalre 
+
+interface B
+method3:  return and no argument :char decalre
+method4: return and  argument :float define
+
+
+interface C
+method5:  return and no argument :String return type define
+method6: return and  argument :boolean 
+
+interface D
+method7:  return and no argument :long define
+method8: return and  argument :double decalre
+
+
+class E
+method9: return and  argument :covariant return type 
+
+import java.util.*;
+interface A{
+    byte method1();
+     default short method2(short a){
+         return a;
+     }
+
+
+
+
+
+
+}
+interface B extends A{
+    default char method3(){
+        return 'a';
+
+    }
+    float method4(float f);
+
+
+
+}
+interface  C extends B{
+    String method5();
+    default boolean method6(boolean b){
+        return b;
+    }
+
+
+}
+interface D extends C{
+    long method7();
+    default double method8(double d){
+        return d;
+    }
+
+
+
+}
+
+class E implements D{
+    E method9(int a){
+        return this;
+    }
+
+    public byte method1() {
+        return 0;
+    }
+
+
+    public float method4(float f) {
+        return f;
+    }
+
+
+    public String method5() {
+        return "ashu";
+    }
+
+
+
+
+    @Override
+    public long method7() {
+        return 0;
+    }
+}
+
+
+
+
+
+public class Pattern1 {
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+
+        A k=new E();
+        B k1=new E();
+        C k2=new E();
+        D k3=new E();
+        E k4=new E();
+
+        System.out.println(k.method1());
+        System.out.println(k.method2(sc.nextShort()));
+        System.out.println(k1.method3());
+        System.out.println(k1.method4(4));
+        System.out.println(k2.method5());
+        System.out.println(k2.method6(true));
+        System.out.println(k3.method7());
+        System.out.println(k3.method8(4));
+        System.out.println(k4.method9(1));
+
+
+
+
+
+
+
+    }
+}
+
+------------------------------------------------------
+11)interface A
+method1:  return and no argument :byte return type 
+method2: return and  argument :short 
+
+interface B
+method3:  return and no argument :char 
+method4: return and  argument :float
+
+
+interface C
+method5:  return and no argument :String return type 
+method6: return and  argument :boolean 
+
+interface D
+method7:  return and no argument :long 
+method8: return and  argument :double
+
+
+class Main
+method9: return and  argument :covariant return type 
+import java.util.*;
+interface A{
+    byte method1();
+    short method2(short a);
+
+
+
+
+
+
+}
+interface B{
+    char method3();
+    float method4(float f);
+
+
+
+}
+interface  C {
+    String method5();
+    boolean method6(boolean b);
+
+
+}
+interface D {
+    long method7();
+    double method8(double d);
+
+
+
+}
+
+
+
+
+
+
+
+public class Pattern1 {
+    Pattern1 show(int a){
+        return this;
+    }
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+
+        A p=new A(){
+            public byte method1() {
+                return 0;
+            }
+
+            @Override
+            public short method2(short a) {
+                return a;
+            }
+
+
+        };
+        B p1=new B(){
+            public char method3() {
+                return 'a';
+            }
+
+            @Override
+            public float method4(float f) {
+                return f;
+            }
+
+        };
+        C p2=new C(){
+            public String method5() {
+                return "ashu";
+            }
+            public boolean method6(boolean b) {
+                return b;
+            }
+
+
+
+
+        };
+        D p3=new D(){
+            public double method8(double d) {
+                return d;
+            }
+            public long method7() {
+                return 0;
+            }
+
+        };
+        System.out.println(p.method1());
+        System.out.println(p.method2(sc.nextShort()));
+        System.out.println(p1.method3());
+        System.out.println(p1.method4(sc.nextFloat()));
+        System.out.println(p2.method5());
+        System.out.println(p2.method6(sc.nextBoolean()));
+        System.out.println(p3.method7());
+        System.out.println(p3.method8(sc.nextDouble()));
+        Pattern1 pr=new Pattern1();
+        System.out.println(pr.show(2));;
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
+-------------
+12)
+interface A
+method1:  return and no argument :byte return type define 
+method2: return and  argument :short decalre 
+
+interface B
+method3:  return and no argument :char decalre
+method4: return and  argument :float define
+
+
+interface C
+method5:  return and no argument :String return type define
+method6: return and  argument :boolean 
+
+interface D
+method7:  return and no argument :long define
+method8: return and  argument :double decalre
+
+
+class E
+method9: return and  argument :covariant return type 
+import java.util.*;
+interface A{
+    byte method1();
+    default short method2(short a){
+        return a;
+    }
+
+
+
+
+
+
+}
+interface B {
+    default char method3(){
+        return 'a';
+
+    }
+    float method4(float f);
+
+
+
+}
+interface  C {
+    String method5();
+    default boolean method6(boolean b){
+        return b;
+    }
+
+
+}
+interface D {
+    long method7();
+    default double method8(double d){
+        return d;
+    }
+
+
+
+}
+
+class E {
+    E method9(int a){
+        return this;
+    }
+
+
+}
+
+
+
+
+
+public class Pattern1 {
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+
+
+
+        A k=new A(){
+            public byte method1() {
+                return 0;
+            }
+
+        };
+       B k1=new B(){
+           public float method4(float f) {
+               return f;
+           }
+
+       };
+       C k2=new C(){
+           public String method5() {
+               return "ashu";
+           }
+
+       };
+       D k3=new D() {
+           @Override
+           public long method7() {
+               return 0;
+           }
+       };
+        System.out.println(new E().method9(1));
+        System.out.println(k.method1());
+        System.out.println(k.method2(sc.nextShort()));
+        System.out.println(k1.method3());
+        System.out.println(k1.method4(sc.nextFloat()));
+        System.out.println(k2.method5());
+        System.out.println(k2.method6(sc.nextBoolean()));
+        System.out.println(k3.method7());
+        System.out.println(k3.method8(sc.nextDouble()));
+
+
+
+
+
+
+
+    }
+}
+1 november 2023.txt
+Displaying 1 november 2023.txt.
