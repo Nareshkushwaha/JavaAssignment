@@ -1,0 +1,607 @@
+		user input 
+1)abstraction class A 
+ab method1()
+
+class B ex A
+
+
+class Main 
+access
+
+
+abstract class A {
+       abstract void method1();
+}
+class B extends A {
+     void method1() {
+        System.out.println("This is method1()");
+    }
+}
+ public class Main 
+ {
+    public static void main(String[] args)
+    {
+        B b = new B();
+        b.method1();
+    }
+}
+=======================================================
+no reutrn and argument 
+2)abstraction class A 
+ab method1()
+
+class B ex A
+
+
+class Main 
+access
+
+import java.util.*;
+abstract class A {
+    abstract void method1(int a);
+}
+
+class B extends A {
+    void method1(int a) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter the value of a ");
+        int b= sc.nextInt();
+        System.out.println("the value of a is " + a);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        A k = new B();
+        k.method1(45);
+    }
+}
+================================================================
+reutrn and no argument 
+3)abstraction class A 
+ab method1()
+
+class B ex A
+
+
+class Main 
+access
+
+// reutrn and no argument 
+// 3)abstraction class A 
+// ab method1()
+
+// class B ex A
+
+
+// class Main 
+// access
+
+abstract class A{
+    abstract int method1();
+    {
+        System.out.println("this is method1");
+    }
+}
+class B extends A{
+      int method1()
+      {
+          System.out.println("this is class B");
+          return 0;
+      }
+}
+public class Main
+{
+    public static void main(String args[])
+    {
+        B b=new B();
+        b.method1();
+    }
+}
+========================================================
+ reutrn and argument 
+4)abstraction class A 
+ab method1()
+
+class B ex A
+
+
+class Main 
+access
+
+ abstract class A{
+     int method1(int a,int b)
+    {
+        return a-b;
+    }
+
+}
+class B extends A{
+    int method1(int a,int b)
+    {
+        return a+b;
+
+    }
+
+}
+public class Main
+{
+  public static void main(String[] args) 
+  {
+    B k=new B();
+    System.out.println(k.method1(1,2));
+   }
+} 
+============================================================
+5)
+ab A 
+method1() 
+method2() 
+
+ab B 
+method3()
+method4()
+
+C ex A
+
+
+D ex B
+
+E ex C
+
+Main()
+access
+
+
+abstract class A {
+    abstract void show1();
+
+    abstract void show2();
+
+}
+
+ class B extends A {
+    void show1() {
+        System.out.println("show1.....");
+    }
+
+    void show2() {
+        System.out.println("show2....");
+    
+    }
+}
+
+class C extends A {
+    void show1() {
+        System.out.println("show1.....");
+    }
+
+    void show2() {
+        System.out.println("show2....");
+    }
+}
+class D extends B{
+    void show1(){
+        System.out.println("show1...");
+    }
+    void show2(){
+        System.out.println("show2...");
+    }
+}
+class E extends C{
+    void show1(){
+        System.out.println("show1....");
+    }
+    void show2(){
+        System.out.println("show2.....");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        B k = new B();
+        k.show1();
+        k.show2();
+        C c = new C();
+        c.show1();
+        c.show2();
+        D d=new D();
+        d.show1();
+        d.show2();
+        E e=new E();
+        e.show1();
+        e.show2();
+    }
+}
+
+=====================================================
+6)
+
+ab A 
+method1() :no return and no argument 
+method2() :no return and  argument 
+
+ab B 
+method3(): return and no argument 
+method4(): return and  argument 
+
+C ex A
+
+
+D ex B
+
+E ex C
+
+Main()
+access
+
+ 
+ abstract class A{
+     abstract  void method1();
+     
+     abstract void method2(int a);
+     
+    }
+ abstract class B {
+      abstract int method3();
+      
+      abstract int method4(int b);
+ }
+ class C extends A {
+      void method1() {
+        System.out.println("method1.....");
+    }
+
+     void method2(int a) {
+        System.out.println(a);
+    }
+}
+class D extends B{
+     int  method3(){
+        return 0;
+    
+       
+    }
+
+     int method4(int b){
+        
+            return b;
+        
+    }
+}
+class E extends C{
+   
+}
+public class Main
+{
+    public static void main(String args[])
+    {
+         E e=new E();
+         D d=new D();
+         e.method1();
+         e.method2(2);
+         System.out.println(d.method3());
+         System.out.println(d.method4(2));
+         
+    }
+}
+===========================================================
+7)  absract class A 
+return and argument method {return type class }
+
+class B ex A 
+Main() =>access 
+
+abstract class A {
+    abstract int show(int a, int b);
+}
+class B extends A{
+    int show(int a, int b) {
+        return a + b;
+    }
+}
+public class Main {
+    public static void main(String[] args)
+    {
+        B b= new B();
+        int sum = b.show(5, 3);
+        System.out.println("Sum: " + sum);
+    }
+}
+============================================================
+8)absract class A 
+return and argument method {return type byte}
+
+class B ex A 
+Main() =>access
+
+abstract class A{
+    abstract byte method1(byte a,byte b);
+
+}
+class B extends A{
+    byte method1(byte a,byte b)
+    {
+        return (byte) (a + b);
+    }
+
+}
+public class Main
+{
+  public static void main(String[] args) 
+  {
+    B k=new B();
+    System.out.println(k.method1((byte) 5, (byte) 3));
+   }
+} 
+============================================================
+9)
+absract class A 
+return and argument method {return type short }
+
+class B ex A 
+Main() =>access
+
+abstract class A{
+    abstract short method1(short a,short b);
+
+}
+class B extends A{
+    short method1(short a,short b)
+    {
+        return (short) (a * b);
+    }
+
+}
+public class Main
+{
+  public static void main(String[] args) 
+  {
+    B k=new B();
+    System.out.println(k.method1((short) 5, (short) 3));
+   }
+} 
+==============================================================
+10)
+absract class A 
+return and argument method {return type boolean }
+
+class B ex A 
+Main() =>access
+
+abstract class A {
+    abstract boolean myMethod(int arg);
+}
+
+class B extends A {
+     boolean myMethod(int arg) {
+        return arg > 0;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        B b = new B();
+        boolean result = b.myMethod(10);
+        System.out.println(result);
+    }
+}
+=================================================================
+11)
+absract class A 
+return and argument method {return type int }
+
+class B ex A 
+Main() =>access 
+
+abstract class A{
+    abstract int method1(int a,int b);
+
+}
+class B extends A{
+    int method1(int a,int b)
+    {
+        return (int) (a * b);
+    }
+
+}
+public class Main
+{
+  public static void main(String[] args) 
+  {
+    B k=new B();
+    System.out.println(k.method1((int) 5, (int) 3));
+   }
+} 
+=============================================================
+12)
+absract class A 
+return and argument method {return type long }
+
+class B ex A 
+Main() =>access
+
+abstract class A{
+    abstract long method1(long a,long b);
+
+}
+class B extends A{
+    long method1(long a,long b)
+    {
+        return (long) (a * b);
+    }
+
+}
+public class Main
+{
+  public static void main(String[] args) 
+  {
+    B k=new B();
+    System.out.println(k.method1((long) 8, (long) 7));
+   }
+} 
+===========================================================
+13)
+absract class A 
+return and argument method {return type double }
+
+class B ex A 
+Main() =>access
+
+abstract class A{
+    abstract double method1(double a,double b);
+
+}
+class B extends A{
+    double method1(double a,double b)
+    {
+        return (double) (a * b);
+    }
+
+}
+public class Main
+{
+  public static void main(String[] args) 
+  {
+    B k=new B();
+    System.out.println(k.method1((double) 8.6, (double) 7.8));
+   }
+} 
+=====================================================================
+14)
+absract class A 
+return and argument method {return type float }
+
+class B ex A 
+Main() =>access
+
+abstract class A{
+    abstract float method1(float a,float b);
+
+}
+class B extends A{
+    float method1(float a,float b)
+    {
+        return (float) (a+b);
+    }
+
+}
+public class Main
+{
+  public static void main(String[] args) 
+  {
+    B k=new B();
+    System.out.println(k.method1((float) 8.9, (float) 7.6));
+   }
+} 
+=========================================================================
+15)
+absract class A 
+return and argument method {return type Stirng }
+
+class B ex A 
+Main() =>access 
+
+abstract class A{
+    abstract String method1(String a);
+
+}
+class B extends A{
+    String method1(String a)
+    {
+        return (String) (a);
+    }
+
+}
+public class Main
+{
+  public static void main(String[] args) 
+  {
+    B k=new B();
+    System.out.println(k.method1("i am naresh kushwha"));
+   }
+} 
+========================================================================
+16)
+absract class A 
+return and argument method {return type char }
+
+class B ex A 
+Main() =>access
+
+abstract class A{
+    abstract char method1(char a);
+
+}
+class B extends A{
+    char method1(char a)
+    {
+        return (char) (a);
+    }
+
+}
+public class Main
+{
+  public static void main(String[] args) 
+  {
+    B k=new B();
+    System.out.println(k.method1('A'));
+   }
+} 
+===================================================================================
+17)
+abstract A 
+
+B ex A 
+
+C ex B
+
+D ex C 
+
+Main()
+access
+
+abstract class A {
+      void show1()
+     {
+         System.out.println("This is class A");
+     }
+ }
+class B extends A {
+       void show2(){
+           System.out.println("This is class B");
+       }
+}
+class C extends B {
+     void show3(){
+         System.out.println("This is class C");
+     }
+ }
+ class D extends C {
+    void show4(){
+        System.out.println("This is class D");
+    }
+}
+public class Main {
+  public static void main(String[] args) {
+    D d=new D();
+    d.show1();
+    d.show2();
+    d.show3();
+    d.show4();
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
