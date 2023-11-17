@@ -1,0 +1,306 @@
+class A
+method :no return and no argument 
+
+class B 
+method :no return and no argument 
+
+Main()
+override :solve this problem 
+
+class A{
+    void show(){
+        System.out.println("hi");
+    }
+
+}
+class B extends A{
+    void show(){
+        super.show();
+        System.out.println("hello");
+    }
+
+}
+
+
+public class Pattern1 {
+
+    public static void main(String[] args) {
+        B k=new B();
+        k.show()
+}
+}
+----------------------------------------------
+class A
+method : return and no argument 
+
+class B 
+method : return and no argument 
+
+Main()
+override :solve this problem
+
+class A{
+    int  show(){
+        return 1;
+    }
+
+}
+class B extends A{
+    int  show(){
+        super.show();
+        return 4;
+    }
+
+}
+
+
+public class Pattern1 {
+
+    public static void main(String[] args) {
+        B k=new B();
+        System.out.println( k.show());
+
+
+
+
+
+
+
+    }
+}
+----------------------------------------------
+class A
+method :no return and argument 
+
+class B 
+method :no return and  argument 
+
+Main()
+override :solve this problem 
+
+class A{
+    void  show(int a,int b){
+        System.out.println(a-b);
+    }
+
+}
+class B extends A{
+    void  show(int a,int b){
+        super.show(a,b);
+
+        System.out.println(a+b);
+
+    }
+
+}
+
+
+public class Pattern1 {
+
+    public static void main(String[] args) {
+        B k=new B();
+         k.show(1,2);
+    }
+}
+-----------------------------------------------
+class A
+method : return and  argument 
+
+class B 
+method : return and  argument 
+
+Main()
+override :solve this problem  
+
+-----------------
+byte :
+class A
+method : return and  argument 
+
+class B 
+method : return and  argument 
+
+Main()
+override :solve this problem 
+class A{
+    int  show(int a,int b){
+        return a-b;
+    }
+
+}
+class B extends A{
+    int  show(int a,int b){
+        super.show(a,b);
+        return a+b;
+
+    }
+
+}
+
+
+public class Pattern1 {
+
+    public static void main(String[] args) {
+        B k=new B();
+        System.out.println(k.show(1,2));
+
+
+
+
+
+
+
+    }
+} 
+-------------------------------------------
+short
+class A
+method : return and  argument 
+
+class B 
+method : return and  argument 
+
+Main()
+override :solve this problem 
+class A{
+    short  show(short a,short b){
+        return b;
+    }
+
+}
+class B extends A{
+    short show(short a,short b){
+        super.show(a,b);
+        return a;
+
+    }
+
+}
+
+
+public class Pattern1 {
+
+    public static void main(String[] args) {
+        B k=new B();
+        short a=1;
+        short b=2;
+        System.out.println(k.show(a,b));
+    }
+}
+===============================================
+char
+class A{
+    char  show(char a,char b){
+        return b;
+    }
+
+}
+class B extends A{
+    char show(char a,char b){
+        super.show(a,b);
+        return a;
+
+    }
+
+}
+
+
+public class Pattern1 {
+
+    public static void main(String[] args) {
+        B k=new B();
+
+        System.out.println(k.show('a','b'));
+
+
+
+
+
+
+
+    }
+}
+==============================================
+ 
+-------
+class name or return name same 
+class A
+method : return and  argument 
+
+class B 
+method : return and  argument 
+
+Main()
+override :solve this problem 
+
+class A{
+    A  show(char a,char b){
+        return this;
+    }
+
+}
+class B extends A{
+    B show(char a,char b){
+        super.show(a,b);
+        return this;
+
+    }
+
+}
+
+
+public class Pattern1 {
+
+    public static void main(String[] args) {
+        B k=new B();
+
+        System.out.println(k.show('a','b'));
+   }
+} 
+--------------------------------
+method overloaidng 
+class A 
+return and argument 
+10 methods data type 
+A{
+      int show(int a){
+        return a;
+    }
+    char show(char a){
+          return a;
+
+    }
+    float show(float a){
+          return a;
+    }
+    double show(double a){
+          return a;
+
+    }
+    boolean show(boolean a){
+          return a;
+    }
+    long show(long a){
+          return a;
+    }
+    short show(short a){
+          return  a;
+    }
+    byte show(byte a){
+          return a;
+    }
+
+}
+
+
+
+public class Pattern1 {
+
+    public static void main(String[] args) {
+       A k=new A();
+        System.out.println(k.show(4l));
+
+}
+}
+
+--------------------------------------------------
