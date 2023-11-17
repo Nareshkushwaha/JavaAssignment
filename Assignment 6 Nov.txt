@@ -1,0 +1,1814 @@
+
+None selected
+
+Skip to content
+Using Gmail with screen readers
+10 of 4,732
+(no subject)
+Inbox
+
+Ashutosh Sharma <ashutosh2ever@gmail.com>
+Attachments
+10:56 AM (7 hours ago)
+to me
+
+
+ 4 Attachments
+  •  Scanned by Gmail
+file A
+default constructor 
+
+substraction 
+
+
+file B 
+access 
+
+a)constant 
+b)user input 
+================================
+import java.util.Scanner;
+public class Naru {
+    Scanner sc=new Scanner(System.in);
+    Naru(){
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        System.out.println(a-b);
+    }
+
+}
+
+
+
+import java.util.Scanner;
+public class Pattern1 {
+
+
+    public static void main(String [] args) {
+
+        Naru k=new Naru();
+
+
+
+    }
+
+
+}
+=============================
+2)
+file A
+parameterised constructor 
+
+substraction 
+
+
+file B 
+access 
+
+a)constant 
+b)user input 
+
+public class Naru {
+
+    Naru(int a,int b){
+
+        System.out.println(a-b);
+    }
+
+}
+import java.util.Scanner;
+public class Pattern1 {
+
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+
+        Naru k=new Naru(a,b);
+
+
+
+    }
+
+
+}
+----------------------------------------------------------------
+3)
+file A
+no return and no argument 
+five method : 
+a)add 
+b)sub 
+c)div 
+d)multi 
+e)modular  
+
+
+file B 
+access 
+
+a)constant 
+b)user input 
+
+import java.util.Scanner;
+public class Naru {
+    Scanner sc=new Scanner(System.in);
+    int a=sc.nextInt();
+    int b=sc.nextInt();
+    void add(){
+        System.out.println("add"+(a+b));
+
+
+
+    }
+    void sub(){
+        System.out.println("sub"+ (a-b));
+
+    }
+    void mul(){
+        System.out.println("multi"+a*b);
+
+    }
+    void mod(){
+        System.out.println("mod"+a%b);
+
+    }
+    void div(){
+        System.out.println("div"+a/b);
+
+    }
+}
+----------------------------------
+import java.util.Scanner;
+public class Pattern1 {
+
+
+    public static void main(String [] args) {
+
+
+        Naru k=new Naru();
+        k.add();
+        k.div();
+        k.sub();
+        k.mod();
+        k.mul();
+ }
+
+
+}
+----------------------------------------------------------------------------------------------
+4)
+file A
+instance variable 
+parameterised constructor 
+
+substraction 
+
+
+file B 
+access 
+
+a)constant 
+b)user input
+
+import java.util.Scanner;
+public class Naru {
+
+    int a;
+    int b;
+    Naru(int a,int b){
+        this.a=a;
+        this.b=b;
+    }
+
+    void sub(){
+        System.out.println(a-b);
+
+    }
+
+
+
+
+
+}
+---------------------------------------------
+
+import java.util.Scanner;
+public class Pattern1 {
+
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+
+
+        Naru k=new Naru(a,b);
+
+        k.sub();
+}
+
+
+}
+--------------------------------------------------
+5)
+file A
+no return and  argument 
+five method : 
+a)add 
+b)sub 
+c)div 
+d)multi 
+e)modular  
+
+
+file B 
+access 
+
+a)constant 
+b)user input 
+import java.util.Scanner;
+public class Naru {
+
+
+
+    void add(int a,int b){
+        System.out.println("add"+(a+b));
+
+
+
+    }
+    void sub(int a,int b){
+        System.out.println("sub"+ (a-b));
+
+    }
+    void mul(int a,int b){
+        System.out.println("multi"+a*b);
+
+    }
+    void mod(int a,int b){
+        System.out.println("mod"+a%b);
+
+    }
+    void div(int a,int b){
+        System.out.println("div"+a/b);
+
+    }
+}
+--------------------------------------------
+import java.util.Scanner;
+public class Pattern1 {
+
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+
+
+        Naru k=new Naru();
+        k.add(a,b);
+        k.div(a,b);
+        k.sub(a,b);
+        k.mod(a,b);
+        k.mul(a,b);
+
+
+
+    }
+
+
+}
+
+--------------------------------------------------
+6)
+file A
+ return and no argument 
+five method : 
+a)add 
+b)sub 
+c)div 
+d)multi 
+e)modular  
+
+
+file B 
+access 
+
+a)constant 
+b)user input 
+import java.util.Scanner;
+public class Naru {
+    Scanner sc=new Scanner(System.in);
+    int a=sc.nextInt();
+    int b=sc.nextInt();
+
+
+
+    int  add(){
+        return a+b;
+
+
+
+    }
+    int  sub(){
+        return a-b;
+
+    }
+    int mul(){
+        return a*b;
+
+    }
+    int mod(){
+        return a%b;
+
+    }
+    int div(){
+        return a/b;
+
+    }
+}
+import java.util.Scanner;
+public class Pattern1 {
+
+
+    public static void main(String [] args) {
+
+
+
+        Naru k=new Naru();
+        System.out.println(k.add());
+        System.out.println(k.sub());
+        System.out.println(k.mul());
+        System.out.println(k.mod());
+        System.out.println(k.div());
+
+
+
+
+    }
+
+
+}
+
+--------------------------------------------------------
+7)
+file A 
+return and no argument 
+return type 
+1)short 
+2)byte 
+3)boolean 
+4)char 
+5)String 
+6)float 
+7long 
+8)double 
+9)covaiant return type 
+
+
+
+file B 
+access A ko 
+
+1)constant 
+2)user input 
+public class Naru {
+    
+
+    short show1(){
+        return 4;
+        
+    }
+    byte show2(){
+        return 4;
+
+    }
+    char  show3(){
+        return 'a';
+
+    }
+    long  show4(){
+        return 4;
+
+    }
+    double  show5(){
+        return 4;
+
+    }
+    String  show6(){
+        return "hi";
+
+    }
+    float  show7(){
+        return 4;
+
+    }
+    boolean  show8(){
+        return true;
+
+    }
+    int   show9(){
+        return 2;
+
+    }
+    Naru  show10(){
+        return this;
+
+    }
+}
+------------------------------------
+import java.util.Scanner;
+public class Pattern1 {
+
+
+    public static void main(String [] args) {
+
+
+
+        Naru k=new Naru();
+        System.out.println(k.show1());
+        System.out.println(k.show2());
+        System.out.println(k.show3());
+        System.out.println(k.show4());
+        System.out.println(k.show5());
+        System.out.println(k.show6());
+        System.out.println(k.show7());
+        System.out.println(k.show8());
+        System.out.println(k.show9());
+        System.out.println(k.show10());
+
+    }
+
+
+}
+-------------------------------------------------------------------
+8)
+file A
+ return and  argument 
+five method : 
+a)add 
+b)sub 
+c)div 
+d)multi 
+e)modular  
+
+
+file B 
+access 
+
+a)constant 
+b)user input 
+
+ava.util.Scanner;
+public class Naru {
+
+
+    int  add(int a,int b){
+        return a+b;
+
+
+
+    }
+    int  sub(int a,int b){
+        return a-b;
+
+    }
+    int mul(int a,int b){
+        return a*b;
+
+    }
+    int mod(int a,int b){
+        return a%b;
+
+    }
+    int div(int a,int b){
+        return a/b;
+
+    }
+}
+-----------------------------------
+import java.util.Scanner;
+public class Pattern1 {
+
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+
+
+
+
+
+        Naru k=new Naru();
+        System.out.println(k.add(a,b));
+        System.out.println(k.sub(a,b));
+        System.out.println(k.mul(a,b));
+        System.out.println(k.mod(a,b));
+        System.out.println(k.div(a,b));
+ }
+
+
+}
+-------------------------------------------------------------------
+9)
+file A 
+return and  argument 
+return type 
+1)short 
+2)byte 
+3)boolean 
+4)char 
+5)String 
+6)float 
+7long 
+8)double 
+9)covaiant return type 
+
+
+
+file B 
+access A ko 
+
+1)constant 
+2)user input
+import java.util.Scanner;
+public class Naru {
+
+
+    short show1(Short t){
+        return t;
+
+    }
+    byte show2(byte b){
+        return b;
+
+    }
+    char  show3(char c){
+        return c;
+
+    }
+    long  show4(long l){
+        return l;
+
+    }
+    double  show5(double d){
+        return d;
+
+    }
+    String  show6(String s){
+        return s;
+
+    }
+    float  show7(float f){
+        return f;
+
+    }
+    boolean  show8(boolean b){
+        return b;
+
+    }
+    int   show9(int i){
+        return i;
+
+    }
+    Naru  show10(int i){
+        return this;
+
+    }
+
+}
+------------------------------
+import java.util.Scanner;
+public class Pattern1 {
+
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+
+
+
+        Naru k=new Naru();
+        System.out.println(k.show1(sc.nextShort()));
+        System.out.println(k.show2(sc.nextByte()));
+        System.out.println(k.show3(sc.next().charAt(0)));
+        System.out.println(k.show4(sc.nextLong()));
+        System.out.println(k.show5(sc.nextDouble()));
+        System.out.println(k.show6(sc.next()));
+        System.out.println(k.show7(sc.nextFloat()));
+        System.out.println(k.show8(sc.nextBoolean()));
+        System.out.println(k.show9(sc.nextInt()));
+        System.out.println(k.show10(sc.nextInt()));
+   }
+
+
+}
+-------------------------------------------------------------------
+10)
+file A
+instance variable 
+parameterised constructor 
+a)no return and no argument 
+b) return and  argument 
+c)no return and  argument 
+d) return and no argument 
+
+
+file B
+access 
+
+user input 
+import java.util.Scanner;
+public class Pattern1 {
+
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+
+
+
+        Naru k=new Naru(2,3);
+        k.show();
+        k.show1(sc.nextInt(),sc.nextInt());
+        System.out.println(k.show2());
+        System.out.println(k.show3(sc.nextInt(),sc.nextInt()));
+ }
+
+
+}
+public class Naru {
+    int a;
+    int b;
+    Naru(int a,int b){
+        this.a=a;
+        this.b=b;
+    }
+    void show(){
+        System.out.println(a+b);
+    }
+    void show1(int r,int l){
+        System.out.println(r-l);
+    }
+    int show2(){
+        return a+b;
+    }
+    int show3(int r,int l){
+        return l+r;
+    }
+}
+
+-------------------------------------------------------------------
+11)
+getter and settor method 
+
+
+file A 
+return and  argument 
+return type 
+1)short 
+2)byte 
+3)boolean 
+4)char 
+5)String 
+6)float 
+7long 
+8)double 
+9)covaiant return type 
+10)void 
+
+
+file B 
+access A ko 
+
+
+2)user input
+public class Naru {
+    int a;
+    float f;
+    double d;
+    String s;
+    long l;
+    short k;
+    boolean b;
+    byte r;
+    char c;
+    void SetA(){
+        a=10;
+
+
+
+    }
+    int getA(){
+        return a;
+    }
+    void SetB(){
+        f=10;
+
+
+
+    }
+    float getB(){
+        return f;
+    }
+    void SetC(){
+        d=10;
+
+
+
+    }
+    double getC(){
+        return a;
+    }
+    void SetD(){
+        s="hi";
+
+
+
+    }
+    String getD(){
+        return s;
+    }
+    void SetE(){
+        l=10;
+
+
+
+    }
+    long getE(){
+        return a;
+    }
+    void SetF(){
+        k=10;
+
+
+
+    }
+    Short getF(){
+        return k;
+    }
+    void SetG(){
+        b=true;
+
+
+
+    }
+    boolean getG(){
+        return b;
+    }
+    void SetH(){
+        r=10;
+
+
+
+    }
+    byte getH(){
+        return r;
+    }
+    void SetI(){
+        c='g';
+
+
+
+    }
+    char getI(){
+        return c;
+    }
+
+--
+import java.util.Scanner;
+public class Pattern1 {
+
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+
+
+
+        Naru k=new Naru();
+        k.SetA();
+        System.out.println(k.getA());
+        k.SetB();
+        System.out.println(k.getB());
+        k.SetC();
+        System.out.println(k.getC());
+        k.SetD();
+        System.out.println(k.getD());
+        k.SetE();
+        System.out.println(k.getE());
+        k.SetF();
+        System.out.println(k.getF());
+        k.SetG();
+        System.out.println(k.getG());
+        k.SetH();
+        System.out.println(k.getH());
+        k.SetI();
+        System.out.println(k.getI());
+
+    }
+
+
+}
+
+-------------------------------------------------------
+12)
+file A 
+single level inheritance 
+parent void show()
+child void show1() 
+
+file B 
+acess 
+import java.util.Scanner;
+ class Naru {
+   void show(){
+       System.out.println("this is show");
+   }
+
+
+}
+class B extends Naru{
+     void show1(){
+         System.out.println("this is show1");
+     }
+
+}
+
+--
+import java.util.Scanner;
+public class Pattern1 {
+
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+
+
+
+        B k=new B();
+        k.show();
+        k.show1();
+ }
+
+
+}
+-------------------------------------------------------
+13)
+file A 
+single level inheritance 
+parent show1() no return and no argument 
+show3()no return and argument 
+child show2() return and no argument  
+show4() return and  argument 
+
+file B 
+acess 
+
+
+user input
+class Naru {
+   void show(){
+       System.out.println("this is show");
+   }
+   void show3(int a){
+       System.out.println(a);
+   }
+
+
+}
+class B extends Naru{
+     int  show1(){
+         return 0;
+     }
+     int show4(int a){
+         return a;
+     }
+
+}
+ 
+--
+import java.util.Scanner;
+public class Pattern1 {
+
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+
+
+
+        B k=new B();
+        k.show();
+        k.show3(3);
+
+        k.show3(4);
+        System.out.println(k.show4(6));
+
+    }
+
+
+}
+-------------------------------
+14)
+file A 
+single level inheritance 
+parent show1()  return and no argument (byte)
+show3()return and argument (short)
+child show2() return and no argument (double) 
+show4() return and  argument (long)
+
+file B 
+acess 
+
+user input
+
+----- 
+
+ class Naru {
+   byte show(){
+       return 4;
+   }
+   short show3(short a){
+       return a;
+   }
+
+
+}
+class B extends Naru{
+     double  show1(){
+         return 0;
+     }
+     long show4(int a){
+         return a;
+     }
+
+}
+
+import java.util.Scanner;
+public class Pattern1 {
+
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+
+
+
+        B k=new B();
+        System.out.println(k.show()); ;
+        System.out.println(k.show3(sc.nextShort()));
+
+        System.out.println(k.show1());
+        System.out.println(k.show4(6));
+
+    }
+
+
+}
+----------------------------------------------------------------------
+15)
+multilevel inheritance 
+file A 
+parent 
+show1()
+child 
+show2()
+grandchild 
+show3()
+
+file B 
+acess
+
+ class Naru {
+   byte show(){
+       return 4;
+   }
+   short show3(short a){
+       return a;
+   }
+
+
+}
+class B extends Naru{
+     double  show1(){
+         return 0;
+     }
+     long show4(int a){
+         return a;
+     }
+
+
+}
+class C extends  B{
+     void hi(){
+         System.out.println("hi");
+     }
+}
+
+--- 
+import java.util.Scanner;
+public class Pattern1 {
+
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+
+
+
+        C k=new C();
+        System.out.println(k.show()); ;
+        System.out.println(k.show3(sc.nextShort()));
+
+        System.out.println(k.show1());
+        System.out.println(k.show4(6));
+        k.hi();
+
+  }
+
+
+}
+----------------------------------
+16)
+multilevel inheritance 
+file A 
+parent 
+show1():no return and argument 
+show2():no return and no argument 
+
+
+child 
+show3():return and argument 
+show4(): return and no argument 
+
+grandchild 
+show5():return and argument 
+show6():return and no argument 
+
+file B 
+acess 
+
+user input 
+import java.util.Scanner;
+public class Pattern1 {
+
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+
+
+
+        C k=new C();
+        System.out.println(k.show3());;
+
+    }
+
+
+}
+
+-------------------------------------
+import java.util.Scanner;
+ class Naru {
+   void show(int a){
+       System.out.println(a);
+   }
+   short show1(){
+       return 0;
+   }
+
+
+}
+class B extends Naru{
+     double  show2(int a){
+         return a;
+     }
+     long show3(){
+         return 0;
+     }
+
+
+}
+class C extends  B{
+     int show4(int a){
+         return a;
+     }
+     int show5(){
+         return 0;
+     }
+
+}
+--------------------------------------------------------------------
+17)
+heiraichal inheritance 
+file A
+parent 
+show1() 
+
+
+chil1
+show2() 
+
+child2
+show3() 
+
+
+child3
+show4() 
+
+
+child 4
+show5() 
+
+
+file B 
+access
+import java.util.Scanner;
+ class Naru {
+   void show(int a){
+       System.out.println(a);
+   }
+   short show1(){
+       return 0;
+   }
+
+
+}
+class B extends Naru{
+     double  show2(int a){
+         return a;
+     }
+     long show3(){
+         return 0;
+     }
+
+
+}
+class C extends  Naru{
+     int show4(int a){
+         return a;
+     }
+     int show5(){
+         return 0;
+     }
+
+}
+ 
+---
+import java.util.Scanner;
+public class Pattern1 {
+
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+
+
+
+        C k=new C();
+        B k1=new B();
+        System.out.println(k.show4(3));;
+        k1.show(3);
+
+    }
+
+
+}
+
+------------------------------------------------------
+18)
+return :data type ,covariant retur type 
+heiraichal inheritance 
+file A
+parent 
+show1() :no return and no argument 
+show2():no return and  argument 
+
+chil1
+show3() : return and no argument 
+show4(): return and  argument 
+
+child2
+show5(): return and no argument 
+show6(): return and  argument 
+
+
+child3
+show7(): return and no argument 
+show8():no return and  argument 
+
+
+child 4
+show9(): return and no argument 
+show10(): return and  argument 
+
+file B 
+access 
+
+user input 
+import java.util.Scanner;
+ class Naru {
+   void show1(){
+       System.out.println("hi");
+   }
+   void show2(long a){
+       System.out.println(a);
+   }
+
+
+}
+class  B extends Naru{
+     int show3(){
+         return 0;
+     }
+     float show4(float a){
+         return a;
+     }
+}
+class  C extends Naru{
+     char show5(){
+         return 'a';
+     }
+     boolean show6(boolean b){
+         return b;
+     }
+}
+
+---
+import java.util.Scanner;
+public class Pattern1 {
+
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+
+
+
+        C k=new C();
+        B k1=new B();
+       k.show1();
+       k1.show2(sc.nextLong());
+
+}
+
+
+}
+======================================================
+import java.util.Scanner;
+ class Naru {
+   void show1(){
+       System.out.println("hi");
+   }
+   void show2(long a){
+       System.out.println(a);
+   }
+
+
+}
+class  B extends Naru{
+     int show3(){
+         return 0;
+     }
+     float show4(float a){
+         return a;
+     }
+}
+class  C extends Naru{
+     char show5(){
+         return 'a';
+     }
+     boolean show6(boolean b){
+         return b;
+     }
+}
+
+
+=========================-=====================================
+19)
+aggregation :
+method overloading 
+import java.util.Scanner;
+ class Naru {
+   void show1(){
+       System.out.println("hi");
+   }
+   void show1(int a){
+       System.out.println(a);
+   }
+
+
+
+}
+----==============================================
+
+import java.util.Scanner;
+ class Pattern1  {
+
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        Naru n=new Naru();
+        n.show1(a);
+        n.show1();
+ }
+
+
+}
+20)
+constructor overloading
+import java.util.Scanner;
+ class Naru {
+   Naru(){
+       System.out.println("hi");
+   }
+   Naru(int a){
+       System.out.println(a);
+   }
+
+
+
+}
+
+
+
+-- 
+import java.util.Scanner;
+ class Pattern1  {
+
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+
+       Naru n=new Naru(4);
+ }
+
+
+}
+===========================================================
+21)
+
+constructor chaining
+import java.util.Scanner;
+ class Pattern1  {
+
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+
+       Naru n=new Naru(4);
+ }
+
+
+}
+import java.util.Scanner;
+ class Naru {
+   Naru(){
+       System.out.println("hi");
+   }
+   Naru(int a){
+       this();
+       System.out.println(a);
+   }
+
+
+
+} 
+======================================================
+22)
+method overrriding
+import java.util.Scanner;
+ class Naru {
+   void show1(){
+       System.out.println("hi");
+   }
+
+
+
+}
+--
+import java.util.Scanner;
+ class Pattern1 extends Naru {
+    void show1(){
+
+        System.out.println("hello");
+    }
+
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+        Pattern1 p=new Pattern1();
+        p.show1();
+
+    }
+
+
+}
+ 
+============================================================
+23)
+method overiding but return type covaraint 
+import java.util.Scanner;
+ class Naru {
+   Naru A(){
+       System.out.println("hi");
+       return  this;
+
+     }
+}
+class B extends Naru{
+     B A(){
+         System.out.println("hello");
+         return this;
+
+
+    }
+
+}
+import java.util.Scanner;
+ class Pattern1  {
+
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+
+      B b=new B();
+        System.out.println(b.A());;
+ }
+
+
+}
+----
+============================================================
+25)
+file A
+absract class A 
+return and argument method {return type char }
+
+class B ex A 
+
+file B
+access
+import java.util.Scanner;
+ abstract class Naru {
+     abstract char method(char a);
+
+
+
+}
+class B extends Naru{
+     char method(char a){
+         return a;
+     }
+
+
+
+}
+--
+import java.util.Scanner;
+ class Pattern1  {
+
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+
+      B b=new B();
+        System.out.println(b.method('a'));;
+ }
+
+
+}
+
+========================================================================
+26)
+file A
+interface A
+method1:  return and no argument :byte return type define 
+method2: return and  argument :short decalre 
+
+interface B
+method3:  return and no argument :char decalre
+method4: return and  argument :float define
+
+
+interface C
+method5:  return and no argument :String return type define
+method6: return and  argument :boolean 
+
+interface D
+method7:  return and no argument :long define
+method8: return and  argument :double decalre
+
+
+class E
+method9: return and  argument :covariant return type 
+
+file B
+access 
+import java.util.Scanner;
+ interface A{
+
+     default  byte method1(){
+         return 4;
+     }
+     short method2(short s);
+
+
+
+ }
+ interface B{
+
+     char method3();
+     default float method4(float f){
+         return f;
+     }
+
+ }
+ interface C{
+
+     String metod5();
+     default boolean method6(boolean b){
+         return b ;
+     }
+
+
+ }
+ interface D{
+
+     default long method7(){
+         return 5;
+     }
+     double method8(double d);
+
+
+ }
+ class E implements A,B,C,D{
+     E method9(int a){
+         return this;
+
+     }
+     public short method2(short s){
+         return s;
+     }
+     public char method3(){
+         return 'a';
+     }
+     public String metod5(){
+         return "ashu";
+     }
+     public double method8(double d){
+         return d;
+     }
+
+ }
+===========================================================================
+import java.util.Scanner;
+ class Pattern1  {
+
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+
+     E k=new E();
+        System.out.println(k.method1());
+        System.out.println(k.method2(sc.nextShort()));
+        System.out.println(k.method3());
+        System.out.println(k.method4(sc.nextFloat()));
+        System.out.println(k.metod5());
+        System.out.println(k.method6(sc.nextBoolean()));
+        System.out.println(k.method7());
+        System.out.println(k.method8(sc.nextDouble()));
+        System.out.println(k.method9(sc.nextInt()));
+
+ }
+
+
+}
+
+
+27)
+file A 
+
+interface A
+method1:  return and no argument :byte return type define 
+method2: return and  argument :short decalre 
+
+interface B
+method3:  return and no argument :char decalre
+method4: return and  argument :float define
+
+
+interface C
+method5:  return and no argument :String return type define
+method6: return and  argument :boolean 
+
+interface D
+method7:  return and no argument :long define
+method8: return and  argument :double decalre
+
+
+class E
+method9: return and  argument :covariant return type 
+
+file B
+access
+
+import java.util.Scanner;
+ interface A{
+
+     default  byte method1(){
+         return 4;
+     }
+     short method2(short s);
+
+
+
+ }
+ interface B{
+
+     char method3();
+     default float method4(float f){
+         return f;
+     }
+
+ }
+ interface C{
+
+     String metod5();
+     default boolean method6(boolean b){
+         return b ;
+     }
+
+
+ }
+ interface D{
+
+     default long method7(){
+         return 5;
+     }
+     double method8(double d);
+
+
+ }
+ class E implements A,B,C,D{
+     E method9(int a){
+         return this;
+
+     }
+     public short method2(short s){
+         return s;
+     }
+     public char method3(){
+         return 'a';
+     }
+     public String metod5(){
+         return "ashu";
+     }
+     public double method8(double d){
+         return d;
+     }
+
+ }
+----
+import java.util.Scanner;
+ class Pattern1  {
+
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+
+     E k=new E();
+        System.out.println(k.method1());
+        System.out.println(k.method2(sc.nextShort()));
+        System.out.println(k.method3());
+        System.out.println(k.method4(sc.nextFloat()));
+        System.out.println(k.metod5());
+        System.out.println(k.method6(sc.nextBoolean()));
+        System.out.println(k.method7());
+        System.out.println(k.method8(sc.nextDouble()));
+        System.out.println(k.method9(sc.nextInt()));
+
+ }
+
+
+}
+
+
+=====================================================================
+28)
+file A
+class and method 
+can we use mulitple final in a single class 
+show()  final (paramter) return and argument 
+show1() return and no argument 
+show2() final (paramter) return and argument 
+show3()return and no argument 
+
+file B 
+acess 
+class Naru{
+    int  show(final int a){
+        return a;
+
+    }
+    int show1(){
+        return 3;
+    }
+    int show2(final int a){
+        return a;
+    }
+    int show3(int a){
+        return a;
+    }
+
+}
+---
+import java.util.Scanner;
+ class Pattern1  {
+
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+        Naru k=new Naru();
+        System.out.println(k.show(sc.nextInt()));
+        System.out.println(k.show1());
+        System.out.println(k.show2(sc.nextInt()));
+        System.out.println(k.show3(sc.nextInt()));
+
+ }
+
+
+}
+
+========================================================
+29)
+method non
+8)class final and method non final (paramter) :output 
+9)class final and method final addition (void)
+a)constant 
+b)user input 
+
+
+10)class final and method final (paramter) addition(void) 
+11)class final and final method return type int addition (non paramter) 
+12)class final and final method return type int add(paramter) 
+final class Naru{
+
+    int show1(int a){
+        return a;
+    }
+
+    final int show3(int a){
+        return a;
+    }
+
+}
+import java.util.Scanner;
+ class Pattern1  {
+
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+        Naru k=new Naru();
+
+        System.out.println(k.show1(2));
+
+        System.out.println(k.show3(sc.nextInt()));
+}
+
+
+}
+=======================================================================================
+
+30)outer class static and inner class non static and method non static but outer class method static
+static class Naru{
+    static void show(){
+        System.out.println("hi");
+    }
+    class A{
+        void show1(){
+            System.out.println("hello");
+        }
+
+    }
+
+
+
+} 
+import java.util.Scanner;
+ class Pattern1  {
+
+
+    public static void main(String [] args) {
+        Scanner sc=new Scanner(System.in);
+        Naru k=new Naru();
+        k.show();
+        k.show1();
+
+}
+
+
+}
+output error
+--------------------------------------------
+31)
+factory method 
+----------------------------------------------------------------------------------------
+6 november 2023.txt
+Displaying 7 november 2023.txt.
