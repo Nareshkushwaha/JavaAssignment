@@ -1,0 +1,104 @@
+1) Problem Statement –A chocolate factory is packing chocolates into the packets. The
+chocolate packets here represent an array of N number of integer values. The task is to find
+the empty packets(0) of chocolate and push it to the end of the conveyor belt(array).
+Example 1 :
+N=8 and arr = [4,5,0,1,9,0,5,0] There are 3 empty packets in the given set. These 3 empty
+packets represented as O should be pushed towards the end of the array
+Input :
+8 – Value of N
+[4,5,0,1,9,0,5,0] – Element of arr[O] to arr[N-1],While input each element is separated by
+newline
+Output:
+4 5 1 9 5 0 0 0
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the size of array");
+        int size=sc.nextInt();
+        System.out.println("Enter the elements");
+        int[]arr=new int[size];
+        for (int i=0;i<size;i++) {
+            arr[i]=sc.nextInt();
+        }
+        int count= 0;
+        for (int i=0;i<size;i++)
+        {
+            if (arr[i]!=0)
+            {
+                int temp=arr[count];
+                arr[count]=arr[i];
+                arr[i]=temp;
+                count++;
+            }
+        }
+        for (int i=count;i<size;i++)
+        {
+            arr[i]=0;
+        }
+        for(int i=0;i<size;i++)
+        {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+----------------------------------------------------------------------
+2)
+Given an integer array Arr of size N the task is to find the count of elements whose value is
+greater than all of its prior elements.
+Note : 1st element of the array should be considered in the count of the result.
+For example,
+Arr[]={7,4,8,2,9}
+As 7 is the first element, it will consider in the result.
+8 and 9 are also the elements that are greater than all of its previous elements.
+Since total of 3 elements is present in the array that meets the condition.
+Hence the output = 3.
+Example 1:
+Input
+5 -> Value of N, represents size of Arr
+7-> Value of Arr[0]
+4 -> Value of Arr[1]
+8-> Value of Arr[2]
+2-> Value of Arr[3]
+
+9-> Value of Arr[4]
+Output :
+3
+Example 2:
+5 -> Value of N, represents size of Arr
+3 -> Value of Arr[0]
+4 -> Value of Arr[1]
+5 -> Value of Arr[2]
+8 -> Value of Arr[3]
+9 -> Value of Arr[4]
+Output :
+5
+
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the size");
+        int size=sc.nextInt();
+        System.out.println("Enter the element");
+        int[] arr=new int[size];
+        for(int i=0;i<size; i++) 
+        {
+            arr[i]=sc.nextInt();
+        }
+        int count = 1;
+        int maxSoFar=arr[0];
+        for(int i=1;i<size; i++) {
+            if (arr[i]>maxSoFar) {
+                count++;
+                maxSoFar=arr[i];
+            }
+        }
+        System.out.println(count);
+    }
+}
+-------------------------------------------------------------------
+
+  
