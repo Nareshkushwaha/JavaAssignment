@@ -1,0 +1,123 @@
+assignment questions : 
+
+file A :
+student : 
+id 
+number 
+fname
+mname
+address 
+email 
+dob 
+
+file B : 
+student class ka varaible bna kr kaam krogey 
+A class 
+
+Main class access 
+
+a)constant 
+
+ class Student {
+    String ID;
+    String NUMBER;
+    String FNAME;
+    String MNAME;
+    String ADDRESS;
+    String EMAIL;
+    String DOB;
+
+    public Student(String id, String number, String fname, String mname, String address, String email, String dob) {
+        this.ID = id;
+        this.NUMBER = number;
+        this.FNAME = fname;
+        this.MNAME = mname;
+        this.ADDRESS = address;
+        this.EMAIL = email;
+        this.DOB = dob;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student student = new Student("123", "456", "John", "Doe", "123 Main St", "johndoe@example.com", "2003-06-05");
+        System.out.println(student.ID); 
+        System.out.println(student.NUMBER);
+        System.out.println(student.FNAME);
+        System.out.println(student.MNAME);
+        System.out.println(student.ADDRESS);
+        System.out.println(student.ADDRESS);
+        System.out.println(student.EMAIL);
+        System.out.println(student.DOB);
+    }
+}
+
+========================================================
+3)
+voter id : ternary
+ 
+public class Main
+{
+    public static void main(String args[])
+    {
+        int age =19;
+        String s=(age>18)?("valid for vot"):("not valid for vot");
+        System.out.println(s);
+    }
+}
+================================================================
+4)
+odd even :ternary 
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args)
+    {
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num=sc.nextInt();
+        
+        String r = (num % 2 == 0) ? ("even"):("odd");
+        System.out.println(num + " is " + r);
+    }
+}
+==========================================================
+5)three number maximum :ternary
+
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc=new Scanner (System.in);
+        int num1=sc.nextInt();
+        int num2=sc.nextInt();
+        int num3=sc.nextInt();
+        
+        int max= (num1 > num2) ? ((num1 > num3) ? num1 : num3) : ((num2 > num3) ? num2 : num3);
+        
+        System.out.println("The maximum number is: " + max);
+    }
+}
+========================================================
+6)
+five number maximum ternary 
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc=new Scanner (System.in);
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
+        int num3 = sc.nextInt();
+        int num4 = sc.nextInt();
+        int num5 = sc.nextInt();
+        
+        int max = (((num1 > num2) ? num1 : num2) > ((num3 > num4) ? num3 : num4)) ? ((num1 > num2) ? num1 : num2) : ((num3 > num4) ? num3 : num4);
+        max = (max > num5) ? max : num5;
+        
+        System.out.println("The maximum number is: " + max);
+    }
+}
+
