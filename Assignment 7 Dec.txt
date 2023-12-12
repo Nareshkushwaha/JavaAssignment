@@ -1,0 +1,195 @@
+Q1)mail validation 
+
+import java.util.regex.*;
+import java.util.regex.Pattern;
+import java.util.*;
+public class Main {
+   public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter your Email: ");
+      String input=sc.next();
+      String re="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
+      Pattern p=Pattern.compile(re);
+      Matcher m=p.matcher(input);
+      if(m.find()&&m.group().equals(input))
+      {
+         System.out.println("Email is valid");
+      } 
+      else
+      {
+         System.out.println("Email is not valid");
+      }
+   }
+}
+========================================================
+Q2)password validation 
+
+import java.util.regex.*;
+import java.util.regex.Pattern;
+import java.util.*;
+public class Main {
+   public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter your Password: ");
+      String input=sc.next();
+      String re="[0-9]{6}";
+      Pattern p=Pattern.compile(re);
+      Matcher m=p.matcher(input);
+      if(m.find()&&m.group().equals(input))
+      {
+         System.out.println("Password is valid");
+      } 
+      else
+      {
+         System.out.println("Password is not valid");
+      }
+   }
+}
+========================================================
+Q3)2345vgb234nhg8978vdf2123
+
+import java.util.regex.*;
+import java.util.regex.Pattern;
+import java.util.*;
+public class Main {
+   public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter your Password: ");
+      String input=sc.next();
+      String re="[0-9]{4}[a-z]{3}[0-9]{3}[a-z]{3}[0-9]{4}[a-z]{3}[0-9]{4}";
+      Pattern p=Pattern.compile(re);
+      Matcher m=p.matcher(input);
+      if(m.find()&&m.group().equals(input))
+      {
+         System.out.println("Password is valid");
+      } 
+      else
+      {
+         System.out.println("Password is not valid");
+      }
+   }
+}
+============================================================================
+Q4)number 
+
+import java.util.regex.*;
+import java.util.regex.Pattern;
+import java.util.*;
+public class Main {
+   public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter your Password: ");
+      String input=sc.next();
+      String re="[0-9]{10}";
+      Pattern p=Pattern.compile(re);
+      Matcher m=p.matcher(input);
+      if(m.find()&&m.group().equals(input))
+      {
+         System.out.println("Password is valid");
+      } 
+      else
+      {
+         System.out.println("Password is not valid");
+      }
+   }
+}
+============================================================================
+Q5)strong password 
+format :
+j1dt@H09mwe# 
+
+
+import java.util.regex.*;
+import java.util.regex.Pattern;
+import java.util.*;
+public class Main {
+   public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter your Password: ");
+      String input=sc.next();
+      String re="[a-z]{1}[0-9]{1}[a-z]{2}[@]{1}[A-Z]{1}[0-9]{2}[a-z]{3}[#]{1}";
+      Pattern p=Pattern.compile(re);
+      Matcher m=p.matcher(input);
+      if(m.find()&&m.group().equals(input))
+      {
+         System.out.println("Password is valid");
+      } 
+      else
+      {
+         System.out.println("Password is not valid");
+      }
+   }
+}
+
+=============================================================================
+Q6)strong passowrd :
+format : 
+qwe45dwj12VKG578
+
+import java.util.regex.*;
+import java.util.regex.Pattern;
+import java.util.*;
+public class Main {
+   public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter your Password: ");
+      String input=sc.next();
+      String re="[a-z]{3}[0-9]{2}[a-z]{3}[0-9]{2}[A-Z]{3}[0-9]{3}";
+      Pattern p=Pattern.compile(re);
+      Matcher m=p.matcher(input);
+      if(m.find()&&m.group().equals(input))
+      {
+         System.out.println("Password is valid");
+      } 
+      else
+      {
+         System.out.println("Password is not valid");
+      }
+   }
+}
+=========================================================================
+Q7)
+123456789
+1=>range [sirf or sirf one he dalyey usk alava kuch or daley invalid]
+========================================================================
+Q8)
+mail input : check matcher pattern 
+
+password :strong password
+
+import java.util.regex.*;
+import java.util.regex.Pattern;
+import java.util.*;
+public class Main {
+   public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter your Email: ");
+      String input=sc.next();
+      String re="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
+      Pattern p=Pattern.compile(re);
+      Matcher m=p.matcher(input);
+      if(m.find()&&m.group().equals(input))
+      {
+         System.out.println("Email is valid");
+      } 
+      else
+      {
+         System.out.println("Email is not valid");
+      }
+      System.out.println("Enter your Password: ");
+      String anput=sc.next();
+      String se="[a-z]{3}[0-9]{2}[a-z]{3}[0-9]{2}[A-Z]{3}[0-9]{3}";
+      Pattern k=Pattern.compile(se);
+      Matcher n=p.matcher(anput);
+      if(m.find()&&m.group().equals(anput))
+      {
+         System.out.println("Password is valid");
+      } 
+      else
+      {
+         System.out.println("Password is not valid");
+      }
+   }
+}
+===================================================================
+
