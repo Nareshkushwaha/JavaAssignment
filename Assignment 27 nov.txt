@@ -1,0 +1,255 @@
+
+1) find maximum element in array
+
+import java.util.*;
+public class Main{
+    public static void main(String args[])
+    { 
+        
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the size");
+        int size=sc.nextInt();
+        System.out.println("Enter the element");
+        int a[]=new int[size];
+    
+        for(int i=0;i<a.length;i++){
+            a[i]=sc.nextInt();
+        }
+          int max=a[0];
+            for(int i=0;i<a.length;i++){
+            if(a[i]>max){
+                max=a[i];
+                
+            }
+        }
+        System.out.print("this is maximum "+max);
+    }
+}
+==========================================================
+2)find minimum element in array
+
+import java.util.*;
+public class Main{
+    public static void main(String args[])
+    { 
+        
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the size");
+        int size=sc.nextInt();
+        System.out.println("Enter the element");
+        int a[]=new int[size];
+    
+        for(int i=0;i<a.length;i++){
+            a[i]=sc.nextInt();
+        }
+          int mini=a[0];
+           for(int i=0;i<a.length;i++){
+            if(a[i]<mini){
+                mini=a[i];
+                
+            }
+        }
+        System.out.print("this is maximum "+max);
+    }
+}
+========================================================
+3)find second maximum in array 
+
+import java.util.*;
+public class Main{
+    public static void main(String args[])
+    {
+        int a[]={8,1,2,3,4,3,2,1};
+        int max=0;
+        Arrays.sort(a);
+        for(int i=0;i<a.length-1;i++){
+            if(a[i]==a[i+1]){
+                a[i]=-1;
+            }
+        }
+            for(int i=0;i<a.length-1;i++){
+            if(a[i]>max){
+                max=a[i];
+            }
+        }
+        System.out.print(max);
+    }
+}
+=============================================================
+4)find how many elements greater than target element ? 
+1 2 3 4 5 
+
+3 : 4 5 
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int[] a={1,2,3,4,5};
+        int target=3;
+        int count=0;
+         System.out.print("this is greater elements: ");
+          for(int i=0;i<a.length;i++)
+       {
+            if(a[i]>target)
+            {
+                System.out.print(a[i]+" ");
+                count++;
+            }
+        }
+
+        System.out.print("\nnumber of element is :=" + count);
+    }
+}
+=====================================================================================
+5)find how many element is smaller than target element ? 
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int[] a={1,2,3,4,5};
+        int target=3;
+        int count=0;
+         System.out.print("this is smaller elements: ");
+          for(int i=0;i<a.length;i++)
+       {
+            if(a[i]<target)
+            {
+                System.out.print(a[i]+" ");
+                count++;
+            }
+        }
+
+        System.out.print("\nnumber of element is :=" + count);
+    }
+}
+==========================================================================
+6)how much element is greater than target ? 
+1 2 3 4 5 
+
+3 : 4 5 (2 element)
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int[] a={1,2,3,4,5,8,9,10};
+        int target=3;
+        int count=0;
+        
+          for(int i=0;i<a.length;i++)
+       {
+            if(a[i]>target)
+            {
+               
+                count++;
+            }
+        }
+
+        System.out.print("\nnumber of element is :=" + count);
+    }
+}
+==============================================================================
+7)how much element is smaller than target ?
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int[] a={1,2,3,4,5};
+        int target=3;
+        int count=0;
+         System.out.print("this is smaller elements: ");
+          for(int i=0;i<a.length;i++)
+       {
+            if(a[i]<target)
+            {
+                System.out.print(a[i]+" ");
+                count++;
+            }
+        }
+
+        System.out.print("\nnumber of element is :=" + count);
+    }
+}
+============================================================================
+8)(two number sum)find the total number of pairs in the array whose sum is equal to the given value of x? 
+1)how many present present 
+
+
+2)2)to print the pairs which pair sum is equal to the target sum : 
+6 3 
+5 4 
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int a[] = { 6, 3, 5, 4, 2, 1 };
+        int target = 9;
+        int count = 0;
+        for (int i = 0; i < a.length; i++) {
+            for (int j = i + 1; j < a.length; j++) {
+                if (a[i] + a[j] == target) {
+                    System.out.println(a[i] + " " + a[j]);
+                }
+            }
+        }
+    }
+}
+========================================================================================
+9)
+find the total number of pairs in the array whose sum is equal to the given value of x? 
+1)how many present present 
+
+public class Main{
+    public static void main(String args[]){
+        int a[]={1,4,2,3,5,6,7,9,10};
+        int target=12;
+        int count=0;
+        for(int i=0;i<a.length;i++){
+            for(int j=i+1;j<a.length;j++){
+                for(int k=j+1;k<a.length;k++)
+                {
+                    if(a[i]+a[j]+a[k]==target){
+                        System.out.println("("+a[i]+" "+a[j]+" "+a[k]+")");
+                        count++;
+                    }
+                }
+    
+            }
+        }
+        System.out.println("elements "+count);
+    }
+}
+===========================================================================================
+10)to check the two are identical or not ? 
+a[]={1,2,3}
+b[]={1,2,3}
+
+public class Main{
+    public static void main(String args[])
+    {
+        int count=0;
+        int a[]={1,2,3};
+        int b[]={1,2,3};
+        for(int i=0;i<a.length;i++){
+            for(int j=0;j<b.length;j++){
+                if(a[i]==b[j]){
+                    count++;
+                }
+                else
+                {
+                    count=0;
+                }
+            }
+        }
+        if(count>0){
+            System.out.println("identical");
+        }
+        else {
+            System.out.println("not");
+        }
+    }
+}
+==========================================================================================
+
