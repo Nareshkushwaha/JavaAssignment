@@ -1,0 +1,44 @@
+1)today data print
+
+import java.time.LocalDate;
+
+public class Main {
+  public static void main(String[] args) {
+    LocalDate today = LocalDate.now();
+    System.out.println("Today's date: " + today);
+  }
+}
+=======================================================
+2)time current 
+
+
+import java.time.LocalTime;
+public class Main {
+  public static void main(String[] args) {
+    LocalTime currentTime = LocalTime.now();
+    System.out.println("Current time: " + currentTime);
+  }
+}
+=======================================================
+
+3)given constant 
+interface :anonymous classs 
+
+interface MyInterface
+{
+  void doSomething();
+}
+
+public class Main {
+  public static void main(String[] args) {
+    MyInterface myInterface=new MyInterface() {
+      
+      public void doSomething()
+      {
+        System.out.println("Doing something...");
+      }
+    };
+
+    myInterface.doSomething();
+  }
+}
