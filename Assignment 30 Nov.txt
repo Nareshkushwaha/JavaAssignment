@@ -1,0 +1,202 @@
+1) Sum of Elements in 2D Array
+ {1, 2, 3},
+ {4, 5, 6},
+ {7, 8, 9}
+sum =>45 
+
+public class Main{
+    public static void main(String args[]){
+        int[][] arr={{1,2,3},{4,5,6},{7,8,9}};
+        int sum=0;
+        for(int i=0;i<arr.length;i++) 
+          {
+          for(int j=0;j<arr[i].length;j++) 
+         {
+            sum+=arr[i][j];
+         }
+      }
+          System.out.println("Sum: " + sum);
+    }
+}
+================================================
+2) Finding Maximum Element
+ {12, 45, 67},
+ {23, 9, 13},
+ {56, 34, 21}
+
+67 is max
+
+public class Main{
+    public static void main(String args[]){
+        int[][] arr={{12,45,67},{23,9,13},{56,34,21}};
+        int max=0;
+        for(int i=0;i<3;i++) 
+          {
+          for(int j=0;j<3;j++) 
+         {
+            if(arr[i][j]>max)
+            {
+                max=arr[i][j];
+            }
+         }
+      }
+          System.out.println("Max: " + max);
+    }
+}
+================================================
+3)Transpose of a Matrix 
+
+
+================================================
+4) Calculate the sum of each row in a 2D array.
+
+{1, 2, 3}=6
+{4, 5, 6}=15
+{7, 8, 9}=24
+
+public class Main{
+    public static void main(String args[]){
+        int a[][]={{1,2,3,},{4,5,6},{7,8,9}};
+        for(int i=0;i<a.length;i++){
+            int sum=0;
+            for(int j=0;j<a[i].length;j++){
+                sum += a[i][j];
+            }
+            System.out.println("Sum of row " + ": " + sum);
+        }
+    }
+}
+================================================================
+5)Calculate the sum of each column in a 2D array.
+
+{1, 2, 3},=12
+{4, 5, 6},=15
+{7, 8, 9}=18
+
+public class Main{
+    public static void main(String args[]){
+        int a[][]={{1,2,3,},{4,5,6},{7,8,9}};
+          for(int j=0;j<a.length;j++) {
+            int sum=0;
+           for(int i=0;i<a.length;i++) {
+                sum += a[j][i];
+            }
+            System.out.println("Sum of colum "+ ": " + sum);
+        }
+    }
+}
+=====================================================================
+
+6)all rows maximum
+{12, 45, 67},
+{23, 9, 13},
+{56, 34, 21}
+
+
+
+first row :{12, 45, 67} =67 
+second row :{23, 9, 13} =23
+third row :{56, 34, 21} =56 
+
+public class Main {
+    public static void main(String[] args) {
+        int[][] a= {{12, 45, 67},{23, 9, 13},{56, 34, 21}};
+        for (int i=0;i<a.length;i++) {
+        int max=a[i][0];
+          for (int j=1;j<a[i].length;j++) {
+                if(a[i][j]>max) {
+                    max=a[i][j];
+                }
+            }
+          System.out.println("Maximum value in row " + (i+ 1) + ": " + max);
+        }
+    }
+}
+===============================================================================
+7)column maximum 
+{12, 45, 67}
+{23, 9, 13}
+{56, 34, 21}
+
+column 1:{12, 45, 67} => 12, 23,56 =>56
+column 2:{23, 9, 13} => 45,9,34 =>45 
+column 3:{56, 34, 21} =>67 , 13, 21 =>67 
+
+public class Main {
+    public static void main(String[] args) {
+        int[][] a= {{12, 45, 67},{23, 9, 13},{56, 34, 21}};
+        for (int j=0;j<a.length;j++) {
+        int max=a[j][0];
+           for (int i=0;i<a.length;i++) {
+                if(a[i][j]>max) {
+                    max=a[i][j];
+                }
+            }
+          System.out.println("Maximum value in colom " + (j+ 1) + ": " + max);
+        }
+    }
+}
+======================================================================================
+8)
+ Calculate the sum of each row in a 2D array.
+
+{1, 2, 3}=6
+{4, 5, 6}=15
+{7, 8, 9}=24
+
+
+row wise sum :average 
+6+15+24 /3 
+public class Main{
+    public static void main(String[] args)
+    {
+        int[][] arr={{1,2,3},{4,5,6},{7,8,9}};
+          for(int i=0;i<arr.length;i++){
+            int sum=0;
+            int avrage=0;
+            for (int j=0;j<arr[i].length;j++)
+            {
+                sum+=arr[i][j];
+            }
+            avrage=sum/arr[i].length;
+            System.out.println("Row " + (i+1) + " sum: " + sum);
+            System.out.println("Row " + (i+1) + " average: " + avrage);
+        }
+    }
+}
+====================================================================================
+9)
+Calculate the sum of each column in a 2D array.
+
+{1, 2, 3},=12
+{4, 5, 6},=15
+{7, 8, 9}=18
+
+12+15+18/3 
+public class Main{
+    public static void main(String args[]){
+        int a[][]={{1,2,3,},{4,5,6},{7,8,9}};
+          for(int j=0;j<a.length;j++) {
+            int sum=0;
+            int average=0;
+           for(int i=0;i<a.length;i++) {
+                sum += a[i][j];
+            }
+            average=sum/a.length;
+            System.out.println("colom " + (j+1) + " sum: " + sum);
+            System.out.println("colom " + (j+1) + " average: " + average);
+        }
+    }
+}
+===================================================================================
+10)
+Calculate the sum of each column in a 2D array.
+
+{1, 2, 3},=12
+{4, 5, 6},=15
+{7, 8, 9}=18
+
+every column average 
+check which column average is maximum
+
+ 
