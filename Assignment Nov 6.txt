@@ -1,0 +1,690 @@
+1)
+file A
+default constructor 
+
+substraction 
+
+
+file B 
+access 
+
+a)constant 
+
+class Student {
+    Student(){
+        int a=67;
+        int b=45;
+        System.out.println(a-b);
+    }
+}
+public class Main {
+    public static void main(String args[])
+    {
+        Student st=new Student();
+    }
+}
+
+==========================================================
+b)user input
+
+import java.util.*;
+class Student {
+    Student(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the value of a");
+        int a=sc.nextInt();
+        System.out.println("Enter the value of b");
+        int b=sc.nextInt();
+        System.out.println(a-b);
+    }
+}
+public class Main {
+    public static void main(String args[])
+    {
+        Student st=new Student();
+    }
+}
+=======================================================
+2)
+file A
+parameterised constructor 
+
+substraction 
+
+
+file B 
+access 
+
+a)constant
+ 
+class Student {
+    Student(int a,int b){
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(a-b);
+    }
+}
+public class Main {
+    public static void main(String args[])
+    {
+        Student st=new Student(45,30);
+    }
+}
+=================
+b)user input 
+
+import java.util.*;
+class Student {
+    Student(int a,int b){
+     System.out.println(a-b);
+    }
+}
+public class Main {
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the value of a");
+        int a=sc.nextInt();
+        System.out.println("Enter the value of b");
+        int b=sc.nextInt();
+        Student st=new Student(a,b);
+    }
+}
+=====================================================================
+3)
+file A
+no return and no argument 
+five method : 
+a)add 
+b)sub 
+c)div 
+d)multi 
+e)modular  
+
+
+file B 
+access 
+
+a)constant
+
+class Student {
+    int a=98,b=56;
+    void add(){
+        System.out.println(a+b);
+    }
+    void sub(){
+        System.out.println(a-b);
+    }
+    void div(){
+        System.out.println(a/b);
+    }
+    void mul(){
+        System.out.println(a*b);
+    }
+}
+public class Main
+{
+    public static void main(String args[])
+    {
+        Student k=new Student();
+        k.add();
+        k.sub();
+        k.div();
+        k.mul();
+        
+    }
+}
+=================================== 
+b)user input 
+
+import java.util.*;
+class Student{
+     Scanner sc=new Scanner(System.in);
+     int a=sc.nextInt();
+     int b=sc.nextInt();
+     void add()
+     {
+       System.out.println(a+b);
+     }
+     
+     void sub()
+     {
+         System.out.println(a-b);
+     }
+     void multi()
+     {
+       System.out.println(a*b);
+     }
+     
+     void modu()
+     {
+         System.out.println(a%b);
+     }
+       void divid()
+     {
+         System.out.println(a/b);
+     }
+     
+}
+public class Main{
+    public static void main(String arg[])
+    {
+        Student k=new Student();
+        k.add();
+        k.sub();
+        k.multi();
+        k.modu();
+        k.divid();
+    }
+}
+======================================================
+4)file A
+instance variable 
+parameterised constructor 
+
+substraction 
+
+
+file B 
+access 
+
+a)constant
+ 
+class Student {
+    Student(int a,int b)
+    {
+        System.out.println(a-b);
+    }
+}
+public class Main {
+    public static void main(String args[])
+    {
+        Student st=new Student(67,7);
+    }
+}
+=========================
+b)user input
+
+import java.util.*;
+class Student {
+    Student(int a,int b){
+     System.out.println(a-b);
+    }
+}
+public class Main {
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the value of a");
+        int a=sc.nextInt();
+        System.out.println("Enter the value of b");
+        int b=sc.nextInt();
+        Student st=new Student(a,b);
+    }
+}
+===========================================================
+5)
+file A
+no return and  argument 
+five method : 
+a)add 
+b)sub 
+c)div 
+d)multi 
+e)modular  
+
+
+file B 
+access 
+
+a)constant 
+class Student{
+     int a;
+     int b;
+     void add(int a,int b)
+     {
+       System.out.println(a+b);
+     }
+     
+     void sub( int a,int b)
+     {
+         System.out.println(a-b);
+     }
+     void multi(int a,int b)
+     {
+       System.out.println(a*b);
+     }
+     
+     void modu(int a,int b)
+     {
+         System.out.println(a%b);
+     }
+       void divid(int a,int b)
+     {
+         System.out.println(a/b);
+     }
+     
+}
+public class Main{
+    public static void main(String arg[])
+    {
+        Student k=new Student();
+        k.add(34,23);
+        k.sub(23,3);
+        k.multi(34,2);
+        k.modu(45,8);
+        k.divid(89,4);
+    }
+}
+===========================
+b)user input 
+
+import java.util.*;
+class Student{
+     Scanner sc=new Scanner(System.in);
+     int a=sc.nextInt();
+     int b=sc.nextInt();
+     void add(int a,int b)
+     {
+       System.out.println(a+b);
+     }
+     
+     void sub(int a,int b)
+     {
+         System.out.println(a-b);
+     }
+     void multi(int a,int b)
+     {
+       System.out.println(a*b);
+     }
+     
+     void modu(int a,int b)
+     {
+         System.out.println(a%b);
+     }
+       void divid(int a,int b)
+     {
+         System.out.println(a/b);
+     }
+     
+}
+public class Main{
+    public static void main(String arg[])
+    {
+        Student k=new Student();
+        k.add(45,89);
+        k.sub(4,5);
+        k.multi(6,9);
+        k.modu(9,4);
+        k.divid(3,5);
+    }
+}
+=========================================================
+6)
+file A
+ return and no argument 
+five method : 
+a)add 
+b)sub 
+c)div 
+d)multi 
+e)modular  
+
+
+file B 
+access 
+
+a)constant 
+class Student{
+    int a;
+    int b;
+    int add(){
+        return 4+6;
+    }
+    int sub(){
+        return 8-4;
+    }
+    int modu(){
+        return 3%7;
+    }
+    int multi(){
+        return  3*5;
+    }
+}
+public class Main
+{
+    public static void main(String args[])
+    {
+        Student k=new Student();
+        System.out.println(k.add());;
+        System.out.println(k.sub());
+        System.out.println(k.modu());
+        System.out.println(k.multi());
+     }
+}
+==========================================
+b)user input
+
+import java.util.*;
+class Student{
+     Scanner sc=new Scanner(System.in);
+     int a=sc.nextInt();
+     int b=sc.nextInt();
+     int add()
+     {
+       System.out.println(a+b);
+       return a+b;
+     }
+     
+     int sub()
+     {
+         System.out.println(a-b);
+         return a-b;
+     }
+     int  multi()
+     {
+       System.out.println(a*b);
+       return a*b;
+     }
+     
+     int  modu()
+     {
+         System.out.println(a%b);
+         return a%b;
+     }
+       int  divid()
+     {
+         System.out.println(a/b);
+         return a/b;
+     }
+     
+}
+public class Main{
+    public static void main(String arg[])
+    {
+        Student k=new Student();
+        k.add();
+        k.sub();
+        k.multi();
+        k.modu();
+        k.divid();
+    }
+}
+=====================================================
+7)
+file A 
+return and no argument 
+return type 
+1)short 
+2)byte 
+3)boolean 
+4)char 
+5)String 
+6)float 
+7long 
+8)double 
+9)covaiant return type 
+
+
+file B 
+access A ko 
+
+1)constant 
+class Student{
+    int a;
+    int b;
+    int A(){
+        return 4+6;
+    }
+     float r(){
+        return 8.5f+4.7f;
+    }
+     double y(){
+        return 1.0d+4.0d;
+    }
+     short e(){
+        return 3+5;
+    }
+    long l(){
+        return 5+4;
+    }
+     char g(){
+        return 'A';
+    }
+     String s(){
+        return "naresh";
+    }
+}
+public class Main
+{
+    public static void main(String args[])
+    {
+        Student k=new Student();
+        System.out.println(k.A());;
+        System.out.println(k.r());
+        System.out.println(k.e());
+        System.out.println(k.y());
+        System.out.println(k.s());;
+        System.out.println(k.g());
+        System.out.println(k.l());
+     }
+}
+================================
+user input 
+import java.util.*;
+class Student {
+    Scanner sc = new Scanner(System.in);
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    
+    int A() {
+        System.out.println(a+b);
+        return a+b;
+    }
+    
+    float F() {
+        System.out.println(a - b);
+        return a - b;
+    }
+    
+    double D() {
+        System.out.println(a * b);
+        return a * b;
+    }
+    
+    long L() {
+        System.out.println(a / b);
+        return a / b;
+    
+}
+}
+
+public class Main {
+    public static void main(String arg[]) {
+        Student k = new Student();
+        k.A();
+        k.F();
+        k.D();
+        k.L();
+    }
+}
+=============================================================
+8)
+file A
+ return and  argument 
+five method : 
+a)add 
+b)sub 
+c)div 
+d)multi 
+e)modular  
+
+
+file B 
+access 
+
+a)constant 
+class Student {
+    int add(int a,int b){
+        System.out.println(a+b);
+        return a+b;
+    }
+    int  sub(int a,int b){
+        System.out.println(a-b);
+        return a-b;
+    }
+    int  div(int a,int b){
+        System.out.println(a/b);
+        return a/b;
+    }
+    int mul(int a,int b){
+        System.out.println(a*b);
+        return a*b;
+    }
+}
+public class Main
+{
+    public static void main(String args[])
+    {
+        Student k=new Student();
+        k.add(4,8);
+        k.sub(8,3);
+        k.div(4,6);
+        k.mul(9,3);
+        
+    }
+}
+==========================================
+b)user input
+
+import java.util.*;
+class Student{
+     int add(int a,int b)
+     {
+       System.out.println(a+b);
+       return a+b;
+     }
+     
+     int sub(int a,int b)
+     {
+         System.out.println(a-b);
+         return a-b;
+     }
+     int multi(int a,int b)
+     {
+       System.out.println(a*b);
+       return a*b;
+     }
+     
+     int  modu(int a,int b)
+     {
+         System.out.println(a%b);
+         return a%b;
+     }
+       int divid(int a,int b)
+     {
+         System.out.println(a/b);
+         return a/b;
+     }
+     
+}
+public class Main{
+    public static void main(String arg[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        Student k=new Student();
+        k.add(a,b);
+        k.sub(a,b);
+        k.multi(a,b);
+        k.modu(a,b);
+        k.divid(a,b);
+    }
+}
+====================================================
+9)
+file A 
+return and  argument 
+return type 
+1)short 
+2)byte 
+3)boolean 
+4)char 
+5)String 
+6)float 
+7long 
+8)double 
+9)covaiant return type 
+
+
+
+file B 
+access A ko 
+
+1)constant 
+// file A 
+// return and  argument 
+// return type 
+// 1)short 
+// 2)byte 
+// 3)boolean 
+// 4)char 
+// 5)String 
+// 6)float 
+// 7long 
+// 8)double 
+// 9)covaiant return type 
+
+
+
+// file B 
+// access A ko 
+
+// 1)constant 
+// 2)user input
+class Student
+{
+    int s(int a, int b)
+    {
+        return a - b;
+    }
+    
+    char C(String str) 
+    {
+        return str.charAt(0);
+    }
+    
+    long l(long a, long b)
+    {
+        return a * b;
+    }
+    
+     double d(double a, double b)
+     {
+        return a / b;
+    }
+    
+     float a(float a, float b) 
+     {
+        return a + b;
+    }
+}
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Student st=new Student();
+        System.out.println(st.s(10, 3));
+        System.out.println(st.C("Hello"));
+        System.out.println(st.l(12L,21L));
+        System.out.println(st.d(10.5, 2.5));
+        System.out.println(st.a(3.14f, 2.71f));
+        
+        
+    }
+}
+=================================================================
+
+ 
