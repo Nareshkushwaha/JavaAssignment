@@ -1,0 +1,85 @@
+1)pascal traingle
+
+import java.util.*;
+
+public class Main {
+    static void printArray(int[][] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    static int[][] pasc(int n) {
+        int[][] ans = new int[n][];
+        for (int i = 0; i < n; i++) {
+            // ith row
+            ans[i] = new int[i + 1];
+            // first row and last row of every element 1
+            ans[i][0] = ans[i][i] = 1;
+            for (int j = 1; j < i; j++) {
+                ans[i][j] = ans[i - 1][j] + ans[i - 1][j - 1];
+            }
+        }
+        return ans;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter row ");
+        int n = sc.nextInt();
+        int a[][] = pasc(n);
+        printArray(a);
+    }
+}
+==============================================================================
+2)sprial matrix 
+
+public class Main {
+    static void printArray(int arr[][]) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void spiral(int[][] a, int r, int c) {
+        int topRow = 0, bottomRow = r - 1, leftCol = 0, rightCol = c - 1;
+        int totalElements = 0;
+        while (totalElements < r * c) {
+            for (int i = leftCol; i <= rightCol && totalElements < r * c; i++) {
+                System.out.print(a[topRow][i] + " ");
+                totalElements++;
+            }
+            topRow++;
+            for (int i = topRow; i <= bottomRow && totalElements < r * c; i++) {
+                System.out.print(a[i][rightCol] + " ");
+                totalElements++;
+            }
+            rightCol--;
+            for (int i = rightCol; i >= leftCol && totalElements < r * c; i--) {
+                System.out.print(a[bottomRow][i] + " ");
+                totalElements++;
+            }
+            bottomRow--;
+            for (int i = bottomRow; i >= topRow && totalElements < r * c; i--) {
+                System.out.print(a[i][leftCol] + " ");
+                totalElements++;
+            }
+            leftCol++;
+        }
+    }
+
+    public static void main(String[] args) {
+        int r = 3, c = 4;
+        int arr[][] = { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 } };
+        System.out.println("orinal");
+        printArray(arr);
+        System.out.println("spiral matrix");
+        spiral(arr, r, c);
+    }
+}
